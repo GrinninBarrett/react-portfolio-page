@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
     return (
@@ -28,7 +30,9 @@ const Home = () => {
                 <div id="recent-project-cards-container" className="flex-item project-cards-container">
                     {/* <!-- This content will be added dynamically from main.js --> */}
                 </div>
-                <a className="link green-link base-text quicksand" href="./projects.html">All Projects</a>
+                <Link className="link green-link base-text quicksand" to="/projects">
+                    All Projects
+                </Link>
             </section>
 
             <section id="contact" className="container flex-item flex-column">
@@ -39,8 +43,8 @@ const Home = () => {
                         Send me an email at ctbarrett.tech@gmail.com!
                     </p>
                 </div>
-                <a id="resume" className="link green-link base-text quicksand" href="./assets/images/CTB-Resume.pdf" 
-                    download="Tucker-Barrett-Resume.pdf">Download My Resume</a>
+                <a id="resume" className="link green-link base-text quicksand" href="./assets/resume/CTB-Resume.pdf" 
+                    download="CTB-Resume.pdf">Download My Resume</a>
             </section>
         </main>
     );
