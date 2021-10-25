@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import Projects from './pages/Projects';
 
 import Header from './components/Header';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -26,9 +26,9 @@ function App() {
 
       <Route exact path="/Projects">
         <Projects />
-      </Route>
+      </Route> */}
 
-      <Footer /> */}
+      <Footer />
 
     </Router>
   );
