@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import { featuredProjects } from './projects';
+import { featuredProjects } from './projectList';
 
 
 function App() {

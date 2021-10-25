@@ -1,5 +1,6 @@
 const allProjects = [
     {
+        id: 1,
         name: "Platonic Friends Forever",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_579,q_auto/v1633128074/Portfolio%20Images/platonic-friends-forever_vlggd7.webp",
         image: "./assets/images/platonic-friends-forever.png",
@@ -9,6 +10,7 @@ const allProjects = [
         technologies: "Express.js, Sequelize/MySQL, Handlebars.js, Materialize"
     },
     {
+        id: 2,
         name: "Skillet and Shaker",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_530,q_auto/v1633128074/Portfolio%20Images/skillet-and-shaker_ckyafc.webp",
         image: "./assets/images/skillet-and-shaker.png",
@@ -19,6 +21,7 @@ const allProjects = [
     },
 
     {
+        id: 3,
         name: "Weather Dashboard",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_527,q_auto/v1633128074/Portfolio%20Images/weather-dashboard_ywoomr.webp",
         image: "./assets/images/weather-dashboard.png",
@@ -29,6 +32,7 @@ const allProjects = [
     },
 
     {
+        id: 4,
         name: "Etch-a-Sketch",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_554,q_auto/v1633128048/Portfolio%20Images/etch-a-sketch_wcltnl.webp",
         image: "./assets/images/etch-a-sketch.png",
@@ -39,6 +43,7 @@ const allProjects = [
     },
 
     {
+        id: 5,
         name: "Wasted Class Time",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_486,q_auto/v1631213149/Portfolio%20Images/wasted-class-time_rqwdbt.webp",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,q_auto:low,w_1000/v1631213149/Images/wasted-class-time_rqwdbt.png",
@@ -49,6 +54,7 @@ const allProjects = [
     },
 
     {
+        id: 6,
         name: "Work Day Scheduler",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_527,q_auto/v1633128074/Portfolio%20Images/work-day-scheduler_h7jeof.webp",
         image: "./assets/images/work-day-scheduler.png",
@@ -59,16 +65,18 @@ const allProjects = [
     },
 
     {
-      name: "Code Quiz",
-      primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_486,q_auto/v1633128074/Portfolio%20Images/code-quiz_hmveas.webp",
-      image: "./assets/images/code-quiz.png",
-      alt: "Code Quiz application",
-      gitHub: "https://github.com/GrinninBarrett/code-quiz",
-      liveURL: "https://grinninbarrett.github.io/code-quiz/",
-      technologies: "JavaScript, HTML, CSS"
+        id: 7,
+        name: "Code Quiz",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_486,q_auto/v1633128074/Portfolio%20Images/code-quiz_hmveas.webp",
+        image: "./assets/images/code-quiz.png",
+        alt: "Code Quiz application",
+        gitHub: "https://github.com/GrinninBarrett/code-quiz",
+        liveURL: "https://grinninbarrett.github.io/code-quiz/",
+        technologies: "JavaScript, HTML, CSS"
     },
 
     {
+        id: 8,
         name: "Password Generator",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_489,q_auto/v1633128074/Portfolio%20Images/password-generator_bcoihz.webp",
         image: "./assets/images/password-generator.png",
@@ -79,6 +87,7 @@ const allProjects = [
     },
 
     {
+        id: 9,
         name: "Rock-Paper-Scissors",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_488,q_auto/v1633128074/Portfolio%20Images/rock-paper-scissors_tyzl9f.webp",
         image: "./assets/images/rock-paper-scissors.png",
@@ -89,6 +98,7 @@ const allProjects = [
     },
 
     {
+        id: 10,
         name: "Technical Documentation Page",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_523,q_auto/v1633128074/Portfolio%20Images/technical-documentation-page_quwm4j.webp",
         image: "./assets/images/technical-documentation-page.png",
@@ -102,6 +112,7 @@ const allProjects = [
 
 const featuredProjects = [
     {
+        id: 1,
         name: "Platonic Friends Forever",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_579,q_auto/v1633128074/Portfolio%20Images/platonic-friends-forever_vlggd7.webp",
         image: "./assets/images/platonic-friends-forever.png",
@@ -111,6 +122,7 @@ const featuredProjects = [
         technologies: "Express.js, Sequelize/MySQL, Handlebars.js, Materialize"
     },
     {
+        id: 2,
         name: "Skillet and Shaker",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_530,q_auto/v1633128074/Portfolio%20Images/skillet-and-shaker_ckyafc.webp",
         image: "./assets/images/skillet-and-shaker.png",
@@ -121,6 +133,7 @@ const featuredProjects = [
     },
 
     {
+        id: 3,
         name: "Weather Dashboard",
         primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_527,q_auto/v1633128074/Portfolio%20Images/weather-dashboard_ywoomr.webp",
         image: "./assets/images/weather-dashboard.png",

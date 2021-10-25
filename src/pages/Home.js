@@ -31,7 +31,8 @@ const Home = ({ featuredProjects }) => {
 
                 <div id="recent-project-cards-container" className="flex-item project-cards-container">
                     {featuredProjects.map((project) => (
-                        <ProjectCard 
+                        <ProjectCard
+                            key={project.id}
                             srcSet={project.primarySource}
                             image={project.image}
                             alt={project.alt}
