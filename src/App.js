@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-// import Home from './pages/Home';
+import Home from './pages/Home';
 // import About from './pages/About';
 // import Projects from './pages/Projects';
 
@@ -16,15 +16,15 @@ function App() {
 
       <Header />
       
-      {/* <Route exact path="/">
+      <Route exact path="/">
         <Home />
       </Route>
 
-      <Route exact path="/about">
+      {/* <Route exact path="/about">
         <About />
       </Route>
 
-      <Route exact path="/Projects">
+      <Route exact path="/projects">
         <Projects />
       </Route> */}
 

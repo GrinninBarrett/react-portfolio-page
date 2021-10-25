@@ -190,9 +190,8 @@ footer {
 }
 
 .top-intro-container {
-    width: 100%;
+    width: 85%;
     justify-content: space-between;
-    margin: 0 3em;
 }
 
 .project-cards-container {
@@ -416,6 +415,10 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
     /* #about-text-container {
         width: 80%;
     } */
+
+    .top-intro-container {
+      width: 100%;
+    }
 
     .tucker-photo {
         height: 300px;
