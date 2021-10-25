@@ -1,27 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
     return (
         <header>
-            <div class="container">
-                <nav id="main-nav" class="flex-item nav-links-container">
-                    <a id="header-logo" class="logo base-text" href="index.html">T</a>
-                    <button id="hamburger-icon" class="hamburger hamburger--collapse" type="button" aria-label="Menu"
+            <div className="container">
+                <nav id="main-nav" className="flex-item nav-links-container">
+                    <Link id="header-logo" className="logo base-text" to="/">
+                        T
+                    </Link>
+                    <button id="hamburger-icon" className="hamburger hamburger--collapse" type="button" aria-label="Menu"
                         aria-controls="navigation" aria-expanded="false">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
+                        <span className="hamburger-box">
+                            <span className="hamburger-inner"></span>
                         </span>
                     </button>
                     <div id="nav-links">
-                        <ul id="nav-menu" class="flex-item nav-list">
-                            <li class="main-nav-item nav-item"><a class="link green-link base-text" href="index.html">Home</a></li>
-                            <li class="main-nav-item nav-item"><a class="link green-link base-text"
-                                    href="about.html">About</a></li>
-                            <li class="main-nav-item nav-item"><a class="link green-link base-text"
-                                    href="projects.html">Projects</a></li>
-                            <li id="contact-link" class="main-nav-item nav-item"><a class="link green-link base-text"
-                                    href="#contact">Contact</a></li>
+                        <ul id="nav-menu" className="flex-item nav-list">
+                            <Link className="main-nav-item nav-item link green-link base-text" to="/">
+                                Home
+                            </Link>
+                            <Link className="main-nav-item nav-item link green-link base-text" to="/about">
+                                About
+                            </Link>
+                            <Link className="main-nav-item nav-item link green-link base-text" to="/projects">
+                                Projects
+                            </Link>
+                            <Link className="main-nav-item nav-item link green-link base-text" to="/">
+                                Contact
+                            </Link>
                         </ul>
                     </div>
 
