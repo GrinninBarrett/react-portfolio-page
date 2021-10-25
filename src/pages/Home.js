@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import ProjectCard from '../components/ProjectCard';
 
-const Home = () => {
+const Home = ({ featuredProjects }) => {
     return (
         <main>
             <section id="intro" className="intro container flex-item flex-column">
@@ -27,8 +28,19 @@ const Home = () => {
 
             <section id="recent-projects" className="container flex-item flex-column">
                 <h2 id="recent-projects-heading" className="base-text">Recent Projects</h2>
+
                 <div id="recent-project-cards-container" className="flex-item project-cards-container">
-                    {/* <!-- This content will be added dynamically from main.js --> */}
+                    {featuredProjects.map((project) => (
+                        <ProjectCard 
+                            srcSet={project.primarySource}
+                            image={project.image}
+                            alt={project.alt}
+                            name={project.name}
+                            tech={project.technologies}
+                            gitHub={project.gitHub}
+                            live={project.liveURL}
+                        />
+                    ))}
                 </div>
                 <Link className="link green-link base-text quicksand" to="/projects">
                     All Projects
