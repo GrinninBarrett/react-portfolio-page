@@ -2,12 +2,12 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
+// import Home from './pages/Home';
+// import About from './pages/About';
+// import Projects from './pages/Projects';
 
 import Header from './components/Header';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
       <Header />
       
-      <Route exact path="/">
+      {/* <Route exact path="/">
         <Home />
       </Route>
 
@@ -28,7 +28,7 @@ function App() {
         <Projects />
       </Route>
 
-      <Footer />
+      <Footer /> */}
 
     </Router>
   );
