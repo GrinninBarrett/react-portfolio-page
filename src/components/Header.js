@@ -44,6 +44,7 @@ const Header = () => {
               </Link>
               <HashLink
                 className="main-nav-item nav-item link green-link base-text"
+                // TODO: update this link with new contact page
                 to="/#contact"
               >
                 Contact
