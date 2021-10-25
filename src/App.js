@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-// import About from './pages/About';
+import About from './pages/About';
 // import Projects from './pages/Projects';
 
 import Header from './components/Header';
@@ -21,11 +21,11 @@ function App() {
         <Home featuredProjects={featuredProjects} />
       </Route>
 
-      {/* <Route exact path="/about">
+      <Route exact path="/about">
         <About />
       </Route>
 
-      <Route exact path="/projects">
+      {/* <Route exact path="/projects">
         <Projects />
       </Route> */}
 

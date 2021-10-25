@@ -21,7 +21,9 @@ const Home = ({ featuredProjects }) => {
                 <div id="bottom-intro-container" className="flex-item flex-column">
                     <p id="slogan" className="base-text">Pursuing my passion for building responsive, accessible web sites and
                         applications</p>
-                    <a href="about.html" id="learn-more" className="link green-link base-text quicksand">Learn More About Me</a>
+                    <Link id="learn-more" className="link green-link base-text quicksand" to="/about">
+                        Learn More About Me
+                    </Link>
                 </div>
 
             </section>
