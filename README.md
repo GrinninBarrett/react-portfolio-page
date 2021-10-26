@@ -34,7 +34,9 @@ This is my portfolio website, created using React.
 
 ## Future Development
 
-<!-- TODO: Add ideas for future development as they arise -->
+* I would like to turn this into a full stack application, using MongoDB and GraphQL for the backend. The purpose of this would be to have all of my projects in a database, allowing for more streamlined updating through a CMS built into the application using authentication and authorization for me to use as an admin.
+
+<!-- TODO: Create Contact.js and add a contact form. Update links pointing to "contact" to reflect this change -->
 
 
 ## Contact
