@@ -16,8 +16,8 @@ const Footer = () => {
           <Link className="logo light-text link footer-link" to="/">
             T
           </Link>
-          <div id="nav-links">
-            <ul id="nav-menu" className="flex-item nav-list">
+          <div id="footer-nav-links">
+            <ul id="footer-nav-menu" className="flex-item nav-list">
               <NavLink
                 className="main-nav-item nav-item link light-link"
                 exact to="/"
