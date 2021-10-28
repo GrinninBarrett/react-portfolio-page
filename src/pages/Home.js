@@ -72,8 +72,13 @@ const Home = ({ featuredProjects }) => {
           <h2 className="base-text">Get in touch!</h2>
           <p className="base-text">
             Feel free to drop a line any time, whether you want to work
-            together, hire me, or just to chat! Send me an email at
-            ctbarrett.tech@gmail.com!
+            together, hire me, or just to chat! Send me an email at <a
+              href="mailto:ctbarrett.tech@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              ctbarrett.tech@gmail.com!
+            </a>
           </p>
         </div>
         <a

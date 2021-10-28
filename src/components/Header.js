@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
@@ -24,24 +24,36 @@ const Header = () => {
           </button>
           <div id="nav-links">
             <ul id="nav-menu" className="flex-item nav-list">
-              <Link
+              <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                to="/"
+                exact to="/"
+                activeStyle={{
+                  backgroundColor: "#47684a",
+                  color: "rgb(238, 238, 238)"
+                }}
               >
                 Home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                to="/about"
+                exact to="/about"
+                activeStyle={{
+                  backgroundColor: "#47684a",
+                  color: "rgb(238, 238, 238)"
+                }}
               >
                 About
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                to="/projects"
+                exact to="/projects"
+                activeStyle={{
+                  backgroundColor: "#47684a",
+                  color: "rgb(238, 238, 238)"
+                }}
               >
                 Projects
-              </Link>
+              </NavLink>
               <HashLink
                 className="main-nav-item nav-item link green-link base-text"
                 // TODO: update this link with new contact page
