@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -13,12 +13,12 @@ const Footer = () => {
             id="left-footer-link-container"
             className="flex-item footer-flex"
           >
-          <Link className="logo light-text link footer-link" to="/">
+          <NavHashLink className="logo light-text link footer-link" to="/">
             T
-          </Link>
+          </NavHashLink>
           <div id="footer-nav-links">
             <ul id="footer-nav-menu" className="flex-item nav-list">
-              <NavLink
+              <NavHashLink
                 className="main-nav-item nav-item link light-link"
                 exact to="/"
                 activeStyle={{
@@ -27,8 +27,8 @@ const Footer = () => {
                 }}
               >
                 Home
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link light-link"
                 exact to="/about"
                 activeStyle={{
@@ -37,8 +37,8 @@ const Footer = () => {
                 }}
               >
                 About
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link light-link"
                 exact to="/projects"
                 activeStyle={{
@@ -47,8 +47,8 @@ const Footer = () => {
                 }}
               >
                 Projects
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link light-link"
                 exact to="/contact"
                 activeStyle={{
@@ -57,7 +57,7 @@ const Footer = () => {
                 }}
               >
                 Contact
-              </NavLink>
+              </NavHashLink>
               </ul>
             </div>
           </div>
