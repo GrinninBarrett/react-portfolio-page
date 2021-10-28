@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -29,6 +30,11 @@ function App() {
       <Route exact path="/projects">
         <ScrollToTop />
         <Projects allProjects={allProjects} />
+      </Route>
+
+      <Route exact path="/contact">
+        <ScrollToTop />
+        <Contact />
       </Route>
 
       <Footer />
