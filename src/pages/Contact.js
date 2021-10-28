@@ -43,39 +43,46 @@ const Contact = () => {
   };
 
   return (
-    <div className="container flex-item flex-column">
-      <h2 className="base-text">Get in Touch!</h2>
-      <form>
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-          className="input-item"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Email address"
-          className="input-item"
-        />
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Enter your message here"
-          className="input-item"
-        />
-        <button type="submit" onClick={handleFormSubmit}>
-          Submit
-        </button>
-        <ToastContainer />
-      </form>
-    </div>
+    <main>
+      <div className="container flex-item flex-column">
+        <h2 className="base-text">Get in Touch!</h2>
+        <form className="flex-item flex-column">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            value={name}
+            name="name"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Name"
+            className="input-item"
+            required
+          />
+          <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Email address"
+            className="input-item"
+            required
+          />
+          <textarea
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Enter your message here"
+            className="input-item"
+            required
+          />
+          <button type="submit" onClick={handleFormSubmit}>
+            Send Message
+          </button>
+          <ToastContainer />
+        </form>
+      </div>
+    </main>
   );
 };
 
