@@ -9,6 +9,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [submitClicked, setSubmitClicked] = useState("");
 
   const handleInputChange = (event) => {
     const { target } = event;
@@ -24,33 +25,48 @@ const Contact = () => {
     }
   };
 
-  const warn = (notification) =>
+  const warn = (notification) => {
     toast.error(notification, {
       autoClose: 3000,
     });
+  };
 
-  const success = (notification) =>
+  const success = (notification) => {
     toast.success(notification, {
       autoClose: 3000,
     });
+  };
 
-//   const handleNotify = (event) => {
-//     const { target } = event;
-//     const inputType = target.name;
-//     const inputValue = target.value;
+  const preventBlur = (event) => {
+    event.preventDefault();
+  };
 
-//     if (inputType === "email" && !validateEmail(email)) {
-//       warn("Please enter a vaild email address.");
-//     } else if (!inputValue.trim().length) {
-//       warn(`Please enter your ${inputType}`);
-//     }
-//   };
+  const handleNotify = (event) => {
+    const { target } = event;
+    const inputType = target.name;
+    const inputValue = target.value;
+    console.log(typeof inputType);
+
+    if (!submitClicked) {
+      if (!inputValue.trim().length) {
+        warn(`Your ${inputType} is required.`);
+      }
+    }
+
+    setSubmitClicked(false);
+  };
 
   // Simply triggers a notification for now - will update with database at a later time
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    if (!name.trim().length && !validateEmail(email) && !message.trim().length) {
+    setSubmitClicked(true);
+
+    if (
+      !name.trim().length &&
+      !validateEmail(email) &&
+      !message.trim().length
+    ) {
       warn("All fields are required.");
     } else {
       if (!name.trim().length) {
@@ -78,6 +94,7 @@ const Contact = () => {
             value={name}
             name="name"
             onChange={handleInputChange}
+            onBlur={handleNotify}
             type="text"
             placeholder="Name"
             className="input-item"
@@ -87,6 +104,7 @@ const Contact = () => {
             value={email}
             name="email"
             onChange={handleInputChange}
+            onBlur={handleNotify}
             type="text"
             placeholder="Email address"
             className="input-item"
@@ -96,6 +114,7 @@ const Contact = () => {
             value={message}
             name="message"
             onChange={handleInputChange}
+            onBlur={handleNotify}
             type="text"
             placeholder="Enter your message here"
             className="input-item"
@@ -103,6 +122,7 @@ const Contact = () => {
           />
           <button
             type="submit"
+            onMouseDown={preventBlur}
             onClick={handleFormSubmit}
             className="input-item button"
           >
