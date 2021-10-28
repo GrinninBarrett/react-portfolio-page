@@ -1,17 +1,17 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
     <header>
       <div className="container">
         <nav id="main-nav" className="flex-item nav-links-container">
-          <Link id="header-logo" className="logo base-text" to="/">
+          <NavHashLink id="header-logo" className="logo base-text" to="/react-portfolio-page/">
             T
-          </Link>
+          </NavHashLink>
           <div id="nav-links">
             <ul id="nav-menu" className="flex-item nav-list">
-              <NavLink
+              <NavHashLink
                 className="main-nav-item nav-item link green-link base-text"
                 exact to="/react-portfolio-page/"
                 activeStyle={{
@@ -20,8 +20,8 @@ const Header = () => {
                 }}
               >
                 Home
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link green-link base-text"
                 exact to="/react-portfolio-page/about"
                 activeStyle={{
@@ -30,8 +30,8 @@ const Header = () => {
                 }}
               >
                 About
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link green-link base-text"
                 exact to="/react-portfolio-page/projects"
                 activeStyle={{
@@ -40,8 +40,8 @@ const Header = () => {
                 }}
               >
                 Projects
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link green-link base-text"
                 exact to="/react-portfolio-page/contact"
                 activeStyle={{
@@ -50,7 +50,7 @@ const Header = () => {
                 }}
               >
                 Contact
-              </NavLink>
+              </NavHashLink>
             </ul>
           </div>
         </nav>
