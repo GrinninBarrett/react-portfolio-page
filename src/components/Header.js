@@ -2,6 +2,27 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
+  // const hamburgerToggle = (event) => {
+  //   event.preventDefault();
+
+  //   const hamburgerIcon = document.querySelector('#hamburger-icon');
+  //   const navLinksEl = document.querySelector('#nav-links');
+
+  //   let menuOpen = false;
+  //   hamburgerIcon.classList.toggle("is-active");
+  //   if (!menuOpen) {
+  //       navLinksEl.style.display = "block";
+  //       navLinksEl.style.right = "0";
+  //       hamburgerIcon.setAttribute("aria-expanded", "true");
+  //       menuOpen = true;
+  //   } else {
+  //       navLinksEl.style.display = "none";
+  //       navLinksEl.style.right = "-1000";
+  //       hamburgerIcon.setAttribute("aria-expanded", "false");
+  //       menuOpen = false;
+  //   }
+  // }
+
   return (
     <header>
       <div className="container">
@@ -9,18 +30,6 @@ const Header = () => {
           <Link id="header-logo" className="logo base-text" to="/">
             T
           </Link>
-          <button
-            id="hamburger-icon"
-            className="hamburger hamburger--collapse"
-            type="button"
-            aria-label="Menu"
-            aria-controls="navigation"
-            aria-expanded="false"
-          >
-            <span className="hamburger-box">
-              <span className="hamburger-inner"></span>
-            </span>
-          </button>
           <div id="nav-links">
             <ul id="nav-menu" className="flex-item nav-list">
               <NavLink
@@ -55,7 +64,6 @@ const Header = () => {
               </NavLink>
               <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                // TODO: update this link with new contact page
                 exact to="/contact"
                 activeStyle={{
                   backgroundColor: "#47684a",

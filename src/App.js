@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -9,10 +9,15 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import Burger from "./components/Burger";
+import MobileNav from "./components/MobileNav"
+
 import { allProjects, featuredProjects } from "./projectList";
 import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
+  const [open, setOpen] = useState(true);
+
   return (
     <Router>
       <Header />
@@ -38,6 +43,10 @@ function App() {
       </Route>
 
       <Footer />
+      <div>
+          <Burger open={open} setOpen={setOpen} />
+          <MobileNav open={open} setOpen={setOpen} />
+      </div>
     </Router>
   );
 }
