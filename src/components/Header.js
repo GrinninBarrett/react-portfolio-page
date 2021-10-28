@@ -13,7 +13,7 @@ const Header = () => {
             <ul id="nav-menu" className="flex-item nav-list">
               <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                exact to="/"
+                exact to="/react-portfolio-page/"
                 activeStyle={{
                   backgroundColor: "#47684a",
                   color: "rgb(238, 238, 238)"
@@ -23,7 +23,7 @@ const Header = () => {
               </NavLink>
               <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                exact to="/about"
+                exact to="/react-portfolio-page/about"
                 activeStyle={{
                   backgroundColor: "#47684a",
                   color: "rgb(238, 238, 238)"
@@ -33,7 +33,7 @@ const Header = () => {
               </NavLink>
               <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                exact to="/projects"
+                exact to="/react-portfolio-page/projects"
                 activeStyle={{
                   backgroundColor: "#47684a",
                   color: "rgb(238, 238, 238)"
@@ -43,7 +43,7 @@ const Header = () => {
               </NavLink>
               <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                exact to="/contact"
+                exact to="/react-portfolio-page/contact"
                 activeStyle={{
                   backgroundColor: "#47684a",
                   color: "rgb(238, 238, 238)"
