@@ -6,8 +6,9 @@
   --light-text: #ddf0ed;
   --medium-gray: #7b8687;
   --green-accent: #47684a;
-  --light-green-accent: #c6ecc9;
+  --light-green-accent: #b7dfba;
   --red-accent: #b4746c;
+  --light-red-accent: #dbaca6;
   --light-blue: #a0b8d1;
   --blue-accent: #6294c8;
 }
@@ -313,6 +314,10 @@ footer {
 
 .footer-link:hover {
     color: var(--light-green-accent);
+}
+
+.social-link:hover {
+    color: var(--light-red-accent);
 }
 
 

@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,39 +13,51 @@ const Footer = () => {
             id="left-footer-link-container"
             className="flex-item footer-flex"
           >
-            <Link
-              id="footer-logo"
-              className="logo light-text footer-link"
-              to="/"
-            >
-              T
-            </Link>
-            <div id="footer-nav-links">
-              <ul id="footer-nav-menu" className="flex-item nav-list">
-                <Link
-                  className="footer-nav-item nav-item link light-link"
-                  to="/"
-                >
-                  Home
-                </Link>
-                <Link
-                  className="footer-nav-item nav-item link light-link"
-                  to="/about"
-                >
-                  About
-                </Link>
-                <Link
-                  className="footer-nav-item nav-item link light-link"
-                  to="/projects"
-                >
-                  Projects
-                </Link>
-                <HashLink
-                  className="footer-nav-item nav-item link light-link"
-                  to="/#contact"
-                >
-                  Contact
-                </HashLink>
+          <Link className="logo light-text link footer-link" to="/">
+            T
+          </Link>
+          <div id="nav-links">
+            <ul id="nav-menu" className="flex-item nav-list">
+              <NavLink
+                className="main-nav-item nav-item link light-link"
+                exact to="/"
+                activeStyle={{
+                  backgroundColor: "rgb(238, 238, 238)",
+                  color: "#47684a"
+                }}
+              >
+                Home
+              </NavLink>
+              <NavLink
+                className="main-nav-item nav-item link light-link"
+                exact to="/about"
+                activeStyle={{
+                  backgroundColor: "rgb(238, 238, 238)",
+                  color: "#47684a"
+                }}
+              >
+                About
+              </NavLink>
+              <NavLink
+                className="main-nav-item nav-item link light-link"
+                exact to="/projects"
+                activeStyle={{
+                  backgroundColor: "rgb(238, 238, 238)",
+                  color: "#47684a"
+                }}
+              >
+                Projects
+              </NavLink>
+              <NavLink
+                className="main-nav-item nav-item link light-link"
+                exact to="/contact"
+                activeStyle={{
+                  backgroundColor: "rgb(238, 238, 238)",
+                  color: "#47684a"
+                }}
+              >
+                Contact
+              </NavLink>
               </ul>
             </div>
           </div>
