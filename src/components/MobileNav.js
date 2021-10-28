@@ -6,10 +6,10 @@ import { NavLink } from "react-router-dom";
 const MobileNav = ({ open, setOpen }) => {
   return (
     <StyledMobileNav open={open}>
-      <NavLink exact to="/react-portfolio-page/" onClick={() => setOpen(!open)}>Home</NavLink>
-      <NavLink exact to="/react-portfolio-page/about" onClick={() => setOpen(!open)}>About</NavLink>
-      <NavLink exact to="/react-portfolio-page/projects" onClick={() => setOpen(!open)}>Projects</NavLink>
-      <NavLink exact to="/react-portfolio-page/contact" onClick={() => setOpen(!open)}>Contact</NavLink>
+      <NavLink to="/react-portfolio-page/" onClick={() => setOpen(!open)}>Home</NavLink>
+      <NavLink to="/react-portfolio-page/about" onClick={() => setOpen(!open)}>About</NavLink>
+      <NavLink to="/react-portfolio-page/projects" onClick={() => setOpen(!open)}>Projects</NavLink>
+      <NavLink to="/react-portfolio-page/contact" onClick={() => setOpen(!open)}>Contact</NavLink>
     </StyledMobileNav>
   );
 };

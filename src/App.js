@@ -22,22 +22,22 @@ function App() {
     <Router>
       <Header />
 
-      <Route exact path="/react-portfolio-page/">
+      <Route path="/react-portfolio-page/">
         <ScrollToTop />
         <Home featuredProjects={featuredProjects} />
       </Route>
 
-      <Route exact path="/react-portfolio-page/about">
+      <Route path="/react-portfolio-page/about">
         <ScrollToTop />
         <About />
       </Route>
 
-      <Route exact path="/react-portfolio-page/projects">
+      <Route path="/react-portfolio-page/projects">
         <ScrollToTop />
         <Projects allProjects={allProjects} />
       </Route>
 
-      <Route exact path="/react-portfolio-page/contact">
+      <Route path="/react-portfolio-page/contact">
         <ScrollToTop />
         <Contact />
       </Route>
