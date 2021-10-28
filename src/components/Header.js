@@ -2,27 +2,6 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
-  // const hamburgerToggle = (event) => {
-  //   event.preventDefault();
-
-  //   const hamburgerIcon = document.querySelector('#hamburger-icon');
-  //   const navLinksEl = document.querySelector('#nav-links');
-
-  //   let menuOpen = false;
-  //   hamburgerIcon.classList.toggle("is-active");
-  //   if (!menuOpen) {
-  //       navLinksEl.style.display = "block";
-  //       navLinksEl.style.right = "0";
-  //       hamburgerIcon.setAttribute("aria-expanded", "true");
-  //       menuOpen = true;
-  //   } else {
-  //       navLinksEl.style.display = "none";
-  //       navLinksEl.style.right = "-1000";
-  //       hamburgerIcon.setAttribute("aria-expanded", "false");
-  //       menuOpen = false;
-  //   }
-  // }
-
   return (
     <header>
       <div className="container">
