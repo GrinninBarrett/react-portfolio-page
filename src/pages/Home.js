@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const Home = ({ featuredProjects }) => {
   return (
-    <main>
+    <main className="content-container">
       <section id="intro" className="intro container flex-item flex-column">
         <div className="top-intro-container flex-item">
           <div id="heading-container">
@@ -19,8 +19,6 @@ const Home = ({ featuredProjects }) => {
             <img
               className="tucker-photo"
               src="assets/images/tucker-photo.png"
-              height="350px"
-              width="350px"
               alt="Tucker Barrett, smiling while on a hike in Korea"
             />
           </picture>
@@ -67,20 +65,7 @@ const Home = ({ featuredProjects }) => {
         </Link>
       </section>
 
-      <section id="contact" className="container flex-item flex-column">
-        <div className="flex-item flex-column">
-          <h2 className="base-text">Get in touch!</h2>
-          <p className="base-text">
-            Feel free to drop a line any time, whether you want to work
-            together, hire me, or just to chat! Send me an email at <a
-              href="mailto:ctbarrett.tech@gmail.com"
-              rel="noreferrer"
-              target="_blank"
-            >
-              ctbarrett.tech@gmail.com!
-            </a>
-          </p>
-        </div>
+      <section className="container flex-item flex-column">
         <a
           id="resume"
           className="link green-link base-text quicksand"

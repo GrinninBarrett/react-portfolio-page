@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const Projects = ({ allProjects }) => {
   return (
-    <main>
+    <main className="content-container">
       <section id="recent-projects" className="container flex-item flex-column">
         <h2 id="recent-projects-heading" className="base-text">
           Recent Projects

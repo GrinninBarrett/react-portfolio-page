@@ -24,30 +24,55 @@ const Contact = () => {
     }
   };
 
+  const warn = (notification) =>
+    toast.error(notification, {
+      autoClose: 3000,
+    });
+
+  const success = (notification) =>
+    toast.success(notification, {
+      autoClose: 3000,
+    });
+
+//   const handleNotify = (event) => {
+//     const { target } = event;
+//     const inputType = target.name;
+//     const inputValue = target.value;
+
+//     if (inputType === "email" && !validateEmail(email)) {
+//       warn("Please enter a vaild email address.");
+//     } else if (!inputValue.trim().length) {
+//       warn(`Please enter your ${inputType}`);
+//     }
+//   };
+
+  // Simply triggers a notification for now - will update with database at a later time
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    const notify = (message) => toast.error(message);
-
-    if (!validateEmail(email)) {
-      notify("Please enter a valid email address.");
-    } else if (!name) {
-      notify("Please enter your name.");
-    } else if (!message) {
-      notify(
-        `You don't want to send a blank message, do you? Write me something!`
-      );
+    if (!name.trim().length && !validateEmail(email) && !message.trim().length) {
+      warn("All fields are required.");
     } else {
-      notify(`Your message has been sent successfully`);
+      if (!name.trim().length) {
+        warn("Please enter your name.");
+      } else if (!validateEmail(email)) {
+        warn("Please enter a vaild email address.");
+      } else if (!message.trim().length) {
+        warn(`You don't want to send a blank message, do you?`);
+      } else {
+        success(`Your message has been sent successfully!`);
+        setName("");
+        setEmail("");
+        setMessage("");
+      }
     }
   };
 
   return (
-    <main>
+    <main className="content-container">
       <div className="container flex-item flex-column">
         <h2 className="base-text">Get in Touch!</h2>
         <form className="flex-item flex-column">
-          <label for="name">Name</label>
           <input
             id="name"
             value={name}
@@ -76,10 +101,14 @@ const Contact = () => {
             className="input-item"
             required
           />
-          <button type="submit" onClick={handleFormSubmit}>
+          <button
+            type="submit"
+            onClick={handleFormSubmit}
+            className="input-item button"
+          >
             Send Message
           </button>
-          <ToastContainer />
+          <ToastContainer pauseOnFocusLoss={false} />
         </form>
       </div>
     </main>

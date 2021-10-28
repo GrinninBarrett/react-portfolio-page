@@ -16,8 +16,6 @@ body {
   margin: 0;
   background-color: var(--background);
   font-family: "Marcellus", sans-serif;
-  position: relative;
-  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,6 +39,10 @@ h1 {
     font-size: 2.5em;
 }
 
+h2 {
+    margin: 2em auto;
+}
+
 h2, h3, h4, h5 {
     font-size: 1.2em;
 }
@@ -49,13 +51,30 @@ form {
     width: 50%;
 }
 
+input, textarea {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px var(--medium-gray);
+    transition: all 0.3s ease;
+}
+
+textarea {
+    height: 100px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 5px 10px var(--medium-gray);
+
+}
+
 footer {
     background-color: var(--green-accent);
     padding: 35px 0;
-    position:absolute;
-    left:0;
-    bottom:0;
-    right:0;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
 
@@ -74,10 +93,6 @@ footer {
     display: none;
 }
 
-#heading-container {
-    margin-top: 6em;
-}
-
 #description{
     font-size: 1.5em;
 }
@@ -88,7 +103,7 @@ footer {
 
 #bottom-intro-container {
     justify-content: center;
-    height: 20%;
+    margin-top: 4em;
 }
 
 #learn-more {
@@ -195,13 +210,18 @@ footer {
 }
 
 .intro {
-    height: 90vh;
     justify-content: space-evenly;
+    margin: 4em auto;
 }
 
 .top-intro-container {
     width: 85%;
     justify-content: space-between;
+}
+
+.tucker-photo {
+    height: 350px;
+    width: 350px;
 }
 
 .project-cards-container {
@@ -256,10 +276,33 @@ footer {
     background-color: var(--green-accent);
 }
 
+.content-container {
+    min-height: calc(80vh - 132px);
+}
+
 
 .input-item {
     width: 100%;
     margin-top: 2em;
+    padding: 8px 0 8px 8px;
+    font-size: 1em;
+    font-family: "Quicksand", sans-serif;
+}
+
+.button {
+    text-align: center;
+    width: 30%;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--green-accent);
+    color: var(--light-text);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px var(--medium-gray);
 }
 
 
@@ -428,6 +471,10 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
         font-size: 2em;
     }
 
+    form {
+        width: 80%;
+    }
+
     #description{
         font-size: 1.2em;
     }
@@ -443,6 +490,10 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
     .tucker-photo {
         height: 300px;
         width: 300px;
+    }
+
+    .button {
+        width: 50%;
     }
 }
 
@@ -496,6 +547,7 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 
     .intro {
         height: auto;
+        margin: 2em auto;
     }
 
 
@@ -515,6 +567,10 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
         padding: 0;
     }
 
+    .button {
+        width: 100%;
+    }
+
 
     .main-nav-item {
         margin: 2em 0;
@@ -527,21 +583,10 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 
 
 @media  screen and (max-height: 750px) {
-    .intro {
-        justify-content: flex-start;
-    }
     
     .tucker-photo {
-        height: 350px;
-        width: 350px;
-    }
-
-    #heading-container {
-        margin-top: 4rem;
-    }
-
-    #bottom-intro-container {
-        margin-top: 25px;
+        height: 300px;
+        width: 300px;
     }
 
 

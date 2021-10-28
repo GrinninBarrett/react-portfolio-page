@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <main>
+    <main className="content-container">
       <section id="about-intro" className="intro container flex-item">
         <div className="top-intro-container flex-item">
           <picture>
@@ -10,8 +10,6 @@ const About = () => {
             <img
               className="tucker-photo"
               src="./assets/images/tucker-photo-3.png"
-              height="350px"
-              width="350px"
               alt="Tucker wearing a cat sweatshirt and cat blazer"
             />
           </picture>
@@ -34,15 +32,7 @@ const About = () => {
         </div>
       </section>
 
-      <section id="contact" className="container flex-item flex-column">
-        <div className="flex-item flex-column">
-          <h2 className="base-text">Get in touch!</h2>
-          <p className="base-text">
-            Feel free to drop a line any time, whether you want to work
-            together, hire me, or just to chat! Send me an email at
-            ctbarrett.tech@gmail.com!
-          </p>
-        </div>
+      <section className="container flex-item flex-column">
         <a
           id="resume"
           className="link green-link base-text quicksand"
