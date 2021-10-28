@@ -13,14 +13,14 @@ const Footer = () => {
             id="left-footer-link-container"
             className="flex-item footer-flex"
           >
-          <NavHashLink className="logo light-text link footer-link" to="/">
+          <NavHashLink className="logo light-text link footer-link" to="/react-portfolio-page/">
             T
           </NavHashLink>
           <div id="footer-nav-links">
             <ul id="footer-nav-menu" className="flex-item nav-list">
               <NavHashLink
                 className="main-nav-item nav-item link light-link"
-                exact to="/"
+                exact to="/react-portfolio-page/"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
                   color: "#47684a"
@@ -30,7 +30,7 @@ const Footer = () => {
               </NavHashLink>
               <NavHashLink
                 className="main-nav-item nav-item link light-link"
-                exact to="/about"
+                exact to="/react-portfolio-page/about"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
                   color: "#47684a"
@@ -40,7 +40,7 @@ const Footer = () => {
               </NavHashLink>
               <NavHashLink
                 className="main-nav-item nav-item link light-link"
-                exact to="/projects"
+                exact to="/react-portfolio-page/projects"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
                   color: "#47684a"
@@ -50,7 +50,7 @@ const Footer = () => {
               </NavHashLink>
               <NavHashLink
                 className="main-nav-item nav-item link light-link"
-                exact to="/contact"
+                exact to="/react-portfolio-page/contact"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
                   color: "#47684a"
