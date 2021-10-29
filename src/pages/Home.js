@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const Home = ({ featuredProjects }) => {
   return (
-    <main className="content-container">
+    <main>
       <section id="intro" className="intro container flex-item flex-column">
         <div className="top-intro-container flex-item">
           <div id="heading-container">
@@ -60,20 +60,9 @@ const Home = ({ featuredProjects }) => {
             />
           ))}
         </div>
-        <Link className="link green-link base-text quicksand" to="/projects">
-          All Projects
+        <Link className="see-more-link link green-link base-text quicksand" to="/projects">
+          See All Projects
         </Link>
-      </section>
-
-      <section className="container flex-item flex-column">
-        <a
-          id="resume"
-          className="link green-link base-text quicksand"
-          href="./assets/resume/CTB-Resume.pdf"
-          download="CTB-Resume.pdf"
-        >
-          Download My Resume
-        </a>
       </section>
     </main>
   );

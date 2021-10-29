@@ -37,6 +37,7 @@ const Contact = () => {
     });
   };
 
+  // This prevents the blur event, which causes multiple notifications
   const preventBlur = (event) => {
     event.preventDefault();
   };

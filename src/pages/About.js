@@ -35,7 +35,7 @@ const About = () => {
       <section className="container flex-item flex-column">
         <a
           id="resume"
-          className="link green-link base-text quicksand"
+          className="see-more-link link green-link base-text quicksand"
           href="./assets/resume/CTB-Resume.pdf"
           download="CTB-Resume.pdf"
         >

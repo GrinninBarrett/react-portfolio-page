@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const Projects = ({ allProjects }) => {
   return (
-    <main className="content-container">
+    <main>
       <section id="recent-projects" className="container flex-item flex-column">
         <h2 id="recent-projects-heading" className="base-text">
           Recent Projects
@@ -27,6 +27,16 @@ const Projects = ({ allProjects }) => {
             />
           ))}
         </div>
+      </section>
+      <section className="container flex-item flex-column">
+        <a
+          className="see-more-link link green-link base-text quicksand"
+          href="https://github.com/grinninbarrett"
+          target="_blank"
+          rel="noreferrer"
+        >
+          See more on GitHub
+        </a>
       </section>
     </main>
   );
