@@ -12,7 +12,7 @@ export const StyledMobileNav = styled.nav`
   position: absolute;
   top: 0;
   right: 0;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
 
   a {
