@@ -13,6 +13,10 @@
   --blue-accent: #6294c8;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background-color: var(--background);

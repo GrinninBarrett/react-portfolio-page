@@ -19,7 +19,7 @@ const Footer = () => {
           <div id="footer-nav-links">
             <ul id="footer-nav-menu" className="flex-item nav-list">
               <NavLink
-                className="main-nav-item nav-item link light-link"
+                className="footer-nav-item nav-item link light-link"
                 exact to="/"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
@@ -29,7 +29,7 @@ const Footer = () => {
                 Home
               </NavLink>
               <NavLink
-                className="main-nav-item nav-item link light-link"
+                className="footer-nav-item nav-item link light-link"
                 exact to="/about"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
@@ -39,7 +39,7 @@ const Footer = () => {
                 About
               </NavLink>
               <NavLink
-                className="main-nav-item nav-item link light-link"
+                className="footer-nav-item nav-item link light-link"
                 exact to="/projects"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
@@ -49,7 +49,7 @@ const Footer = () => {
                 Projects
               </NavLink>
               <NavLink
-                className="main-nav-item nav-item link light-link"
+                className="footer-nav-item nav-item link light-link"
                 exact to="/contact"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",

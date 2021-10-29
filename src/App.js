@@ -16,7 +16,7 @@ import { allProjects, featuredProjects } from "./projectList";
 import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <Router>
