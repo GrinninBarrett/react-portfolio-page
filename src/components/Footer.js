@@ -13,52 +13,56 @@ const Footer = () => {
             id="left-footer-link-container"
             className="flex-item footer-flex"
           >
-          <Link className="logo light-text link footer-link" to="/">
-            T
-          </Link>
-          <div id="footer-nav-links">
-            <ul id="footer-nav-menu" className="flex-item nav-list">
-              <NavLink
-                className="footer-nav-item nav-item link light-link"
-                exact to="/"
-                activeStyle={{
-                  backgroundColor: "rgb(238, 238, 238)",
-                  color: "#47684a"
-                }}
-              >
-                Home
-              </NavLink>
-              <NavLink
-                className="footer-nav-item nav-item link light-link"
-                exact to="/about"
-                activeStyle={{
-                  backgroundColor: "rgb(238, 238, 238)",
-                  color: "#47684a"
-                }}
-              >
-                About
-              </NavLink>
-              <NavLink
-                className="footer-nav-item nav-item link light-link"
-                exact to="/projects"
-                activeStyle={{
-                  backgroundColor: "rgb(238, 238, 238)",
-                  color: "#47684a"
-                }}
-              >
-                Projects
-              </NavLink>
-              <NavLink
-                className="footer-nav-item nav-item link light-link"
-                exact to="/contact"
-                activeStyle={{
-                  backgroundColor: "rgb(238, 238, 238)",
-                  color: "#47684a"
-                }}
-              >
-                Contact
-              </NavLink>
-              </ul>
+            <Link className="logo light-text link footer-link" to="/">
+              T
+            </Link>
+            <div id="footer-nav-links">
+              <div id="footer-nav-menu" className="flex-item nav-list">
+                <NavLink
+                  className="footer-nav-item nav-item link light-link"
+                  exact
+                  to="/"
+                  activeStyle={{
+                    backgroundColor: "rgb(238, 238, 238)",
+                    color: "#47684a",
+                  }}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  className="footer-nav-item nav-item link light-link"
+                  exact
+                  to="/about"
+                  activeStyle={{
+                    backgroundColor: "rgb(238, 238, 238)",
+                    color: "#47684a",
+                  }}
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  className="footer-nav-item nav-item link light-link"
+                  exact
+                  to="/projects"
+                  activeStyle={{
+                    backgroundColor: "rgb(238, 238, 238)",
+                    color: "#47684a",
+                  }}
+                >
+                  Projects
+                </NavLink>
+                <NavLink
+                  className="footer-nav-item nav-item link light-link"
+                  exact
+                  to="/contact"
+                  activeStyle={{
+                    backgroundColor: "rgb(238, 238, 238)",
+                    color: "#47684a",
+                  }}
+                >
+                  Contact
+                </NavLink>
+              </div>
             </div>
           </div>
           <div id="footer-social-links">

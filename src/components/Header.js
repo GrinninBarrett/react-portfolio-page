@@ -10,7 +10,7 @@ const Header = () => {
             T
           </Link>
           <div id="nav-links">
-            <ul id="nav-menu" className="flex-item nav-list">
+            <div id="nav-menu" className="flex-item nav-list">
               <NavLink
                 className="main-nav-item nav-item link green-link base-text"
                 exact to="/"
@@ -51,7 +51,7 @@ const Header = () => {
               >
                 Contact
               </NavLink>
-            </ul>
+            </div>
           </div>
         </nav>
       </div>
