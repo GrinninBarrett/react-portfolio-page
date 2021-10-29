@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -22,22 +22,22 @@ function App() {
     <Router>
       <Header />
 
-      <Route exact path="/">
+      <Route path="/">
         <ScrollToTop />
         <Home featuredProjects={featuredProjects} />
       </Route>
 
-      <Route exact path="/about">
+      <Route path="/react-portfolio-page/about">
         <ScrollToTop />
         <About />
       </Route>
 
-      <Route exact path="/projects">
+      <Route path="/projects">
         <ScrollToTop />
         <Projects allProjects={allProjects} />
       </Route>
 
-      <Route exact path="/contact">
+      <Route path="/contact">
         <ScrollToTop />
         <Contact />
       </Route>

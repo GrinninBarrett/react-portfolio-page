@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -13,51 +13,51 @@ const Footer = () => {
             id="left-footer-link-container"
             className="flex-item footer-flex"
           >
-          <Link className="logo light-text link footer-link" to="/">
+          <NavHashLink className="logo light-text link footer-link" to="/react-portfolio-page/">
             T
-          </Link>
+          </NavHashLink>
           <div id="footer-nav-links">
             <ul id="footer-nav-menu" className="flex-item nav-list">
-              <NavLink
+              <NavHashLink
                 className="main-nav-item nav-item link light-link"
-                exact to="/"
+                to="/"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
                   color: "#47684a"
                 }}
               >
                 Home
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link light-link"
-                exact to="/about"
+                to="/about"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
                   color: "#47684a"
                 }}
               >
                 About
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link light-link"
-                exact to="/projects"
+                to="/projects"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
                   color: "#47684a"
                 }}
               >
                 Projects
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 className="main-nav-item nav-item link light-link"
-                exact to="/contact"
+                to="/contact"
                 activeStyle={{
                   backgroundColor: "rgb(238, 238, 238)",
                   color: "#47684a"
                 }}
               >
                 Contact
-              </NavLink>
+              </NavHashLink>
               </ul>
             </div>
           </div>
