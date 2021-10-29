@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledMobileNav = styled.nav`
-  display: none;
+  display: ${({ open }) => open ? 'flex' : 'none'};
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 6em;
@@ -14,10 +14,6 @@ export const StyledMobileNav = styled.nav`
   right: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-  
-  @media (max-width: 768px) {
-    display: flex;
-  }
 
   a {
     font-size: 1rem;
