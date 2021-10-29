@@ -1,56 +1,56 @@
 import React from "react";
-import { NavHashLink } from "react-router-hash-link";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
       <div className="container">
         <nav id="main-nav" className="flex-item nav-links-container">
-          <NavHashLink id="header-logo" className="logo base-text" to="/react-portfolio-page/">
+          <Link id="header-logo" className="logo base-text" to="/">
             T
-          </NavHashLink>
+          </Link>
           <div id="nav-links">
             <ul id="nav-menu" className="flex-item nav-list">
-              <NavHashLink
+              <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                to="/"
+                exact to="/"
                 activeStyle={{
                   backgroundColor: "#47684a",
                   color: "rgb(238, 238, 238)"
                 }}
               >
                 Home
-              </NavHashLink>
-              <NavHashLink
+              </NavLink>
+              <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                to="/about"
+                exact to="/about"
                 activeStyle={{
                   backgroundColor: "#47684a",
                   color: "rgb(238, 238, 238)"
                 }}
               >
                 About
-              </NavHashLink>
-              <NavHashLink
+              </NavLink>
+              <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                to="/projects"
+                exact to="/projects"
                 activeStyle={{
                   backgroundColor: "#47684a",
                   color: "rgb(238, 238, 238)"
                 }}
               >
                 Projects
-              </NavHashLink>
-              <NavHashLink
+              </NavLink>
+              <NavLink
                 className="main-nav-item nav-item link green-link base-text"
-                to="/contact"
+                exact to="/contact"
                 activeStyle={{
                   backgroundColor: "#47684a",
                   color: "rgb(238, 238, 238)"
                 }}
               >
                 Contact
-              </NavHashLink>
+              </NavLink>
             </ul>
           </div>
         </nav>
