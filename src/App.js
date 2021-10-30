@@ -1,19 +1,20 @@
-import React, { useState } from "react";
-import { HashRouter as Router, Route } from "react-router-dom";
+import React, { lazy, useState } from 'react';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
-import Burger from "./components/Burger";
-import MobileNav from "./components/MobileNav"
+import Burger from './components/Burger';
+import MobileNav from './components/MobileNav';
 
 import { allProjects, featuredProjects } from "./projectList";
 import ScrollToTop from "./utils/ScrollToTop";
+
+import Home from './pages/Home';
+const About = lazy(() => import ('./pages/About'));
+const Projects = lazy(() => import ('./pages/Projects'));
+const Contact = lazy(() => import ('./pages/Contact'));
+
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -44,7 +45,7 @@ function App() {
 
       <Footer />
       <div>
-          <Burger open={open} setOpen={setOpen} />
+          <Burger open={open} setOpen={setOpen} aria-label="Menu" />
           <MobileNav open={open} setOpen={setOpen} />
       </div>
     </Router>
