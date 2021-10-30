@@ -55,6 +55,7 @@ h2, h3, h4, h5 {
 
 form {
     width: 50%;
+    margin-bottom: 4rem;
 }
 
 input, textarea {
