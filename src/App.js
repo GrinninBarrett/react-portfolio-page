@@ -1,19 +1,19 @@
-import React, { lazy, useState } from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 import Burger from './components/Burger';
 import MobileNav from './components/MobileNav';
 
 import { allProjects, featuredProjects } from "./projectList";
 import ScrollToTop from "./utils/ScrollToTop";
-
-import Home from './pages/Home';
-const About = lazy(() => import ('./pages/About'));
-const Projects = lazy(() => import ('./pages/Projects'));
-const Contact = lazy(() => import ('./pages/Contact'));
 
 
 function App() {
