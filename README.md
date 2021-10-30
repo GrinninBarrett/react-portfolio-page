@@ -4,7 +4,7 @@ This is my portfolio website, created using React.
 
 ## Link to Deployed Site
 
-[Tucker's Portfolio](https://ctbarrett.tech)
+[Tucker's Portfolio](https://tucker.tech)
 
 ## Table of Contents
   * [Technologies](#technologies)
@@ -26,12 +26,15 @@ This is my portfolio website, created using React.
 
 ## Functionality
 
-<!-- TODO: Add screenshots/GIFs of completed application once ready -->
+#### Application Demo
+
+![Application Demo](./public/assets/images/app-demo.gif)
 
 
 ## Challenges
 
-<!-- TODO: Add challenges as they arise -->
+* Refactoring my existing portfolio page to use React wasn't hard in itself. The biggest challenge with this was figuring out how to implement a new hamburger menu using Styled Components.
+* Another challenge was to fix some formatting/CSS issues with Safari. I tried opening the deployed application on my iPhone, and even with Chrome (which is really just Safari with a Chrome interface), the transition property using `all` wasn't working smoothly. After some quick research, I realized the issue was with the `html, body` selectors needing a `relative` position. 
 
 
 ## Future Development
@@ -40,8 +43,7 @@ This is my portfolio website, created using React.
 
 <!-- TODO: Add skills section on Home page -->
 <!-- TODO: Reorganize location of resume download link -->
-<!-- TODO: Fix positioning of footer on About and Contact pages -->
-<!-- TODO: Fix spacing between bottom of main and footer -->
+<!-- TODO: Fix spacing between bottom of main and footer, especially on Contact page -->
 <!-- TODO: Update resume and link new PDF -->
 
 
