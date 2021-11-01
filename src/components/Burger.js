@@ -4,7 +4,7 @@ import { bool, func } from 'prop-types';
 
 const Burger = ({ open, setOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger aria-label="toggle-mobile-navigation-menu" open={open} onClick={() => setOpen(!open)}>
       <div />
       <div />
       <div />
