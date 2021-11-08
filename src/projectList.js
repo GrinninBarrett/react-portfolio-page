@@ -7,7 +7,8 @@ const allProjects = [
         alt: "Platonic Friends Forever application",
         gitHub: "https://github.com/GrinninBarrett/platonic-friends-forever",
         liveURL: "https://pfforever.herokuapp.com/",
-        technologies: "Express.js, Sequelize/MySQL, Handlebars.js, Materialize"
+        technologies: "Express.js, Sequelize/MySQL, Handlebars.js, Materialize",
+        description: "Social networking app to make new friends with similar interests"
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ const allProjects = [
         alt: "Skillet and Shaker application",
         gitHub: "https://github.com/GrinninBarrett/recipe-finder",
         liveURL: "https://grinninbarrett.github.io/recipe-finder/",
-        technologies: "JavaScript, HTML, CSS/Bulma"
+        technologies: "JavaScript, HTML, CSS/Bulma",
+        description: "Find and save food and drink recipes"
     },
 
     {
@@ -28,7 +30,8 @@ const allProjects = [
         alt: "Weather Dashboard application",
         gitHub: "https://github.com/GrinninBarrett/weather-dashboard",
         liveURL: "https://grinninbarrett.github.io/weather-dashboard/",
-        technologies: "OpenWeather API, JavaScript, HTML, CSS"
+        technologies: "OpenWeather API, JavaScript, HTML, CSS",
+        description: "See weather details and forecasts for your city"
     },
 
     {
@@ -39,7 +42,8 @@ const allProjects = [
         alt: "Etch-a-Sketch application",
         gitHub: "https://github.com/GrinninBarrett/etch-a-sketch",
         liveURL: "https://grinninbarrett.github.io/etch-a-sketch/",
-        technologies: "JavaScript, HTML, CSS"
+        technologies: "JavaScript, HTML, CSS",
+        description: "Pixel drawing canvas based on the famous Etch-a-Sketch"
     },
 
     {
@@ -50,7 +54,8 @@ const allProjects = [
         alt: "Wasted Class Time application",
         gitHub: "https://github.com/GrinninBarrett/wasted-class-time",
         liveURL: "https://grinninbarrett.github.io/wasted-class-time/",
-        technologies: "JavaScript, HTML, CSS"
+        technologies: "JavaScript, HTML, CSS",
+        description: "Calculate percentage of class wasted by poor student behavior"
     },
 
     {
@@ -61,7 +66,8 @@ const allProjects = [
         alt: "Work Day Scheduler application",
         gitHub: "https://github.com/GrinninBarrett/work-day-scheduler",
         liveURL: "https://grinninbarrett.github.io/work-day-scheduler/",
-        technologies: "jQuery, Moment.js"
+        technologies: "jQuery, Moment.js",
+        description: "Create, edit, and delete events or to-dos for your workday"
     },
 
     {
@@ -72,7 +78,8 @@ const allProjects = [
         alt: "Code Quiz application",
         gitHub: "https://github.com/GrinninBarrett/code-quiz",
         liveURL: "https://grinninbarrett.github.io/code-quiz/",
-        technologies: "JavaScript, HTML, CSS"
+        technologies: "JavaScript, HTML, CSS",
+        description: "Interactive quiz to test understanding of JavaScript"
     },
 
     {
@@ -83,7 +90,8 @@ const allProjects = [
         alt: "Password Generator application",
         gitHub: "https://github.com/GrinninBarrett/password-generator",
         liveURL: "https://grinninbarrett.github.io/password-generator/",
-        technologies: "JavaScript"
+        technologies: "JavaScript",
+        description: "Randomly generate a secure password"
     },
 
     {
@@ -94,7 +102,8 @@ const allProjects = [
         alt: "Rock Paper Scissors application",
         gitHub: "https://github.com/GrinninBarrett/rock-paper-scissors-new",
         liveURL: "https://grinninbarrett.github.io/rock-paper-scissors-new/",
-        technologies: "JavaScript, HTML, CSS"
+        technologies: "JavaScript, HTML, CSS",
+        description: "Play Rock-Paper-Scissors against the computer!"
     },
 
     {
@@ -105,7 +114,8 @@ const allProjects = [
         alt: "Technical Documentation page",
         gitHub: "https://github.com/GrinninBarrett/Technical-Documentation-Page",
         liveURL: "https://grinninbarrett.github.io/Technical-Documentation-Page/",
-        technologies: "HTML, CSS"
+        technologies: "HTML, CSS",
+        description: "Documentation page to easily find important information"
     }
 ]
 
@@ -119,7 +129,8 @@ const featuredProjects = [
         alt: "Platonic Friends Forever application",
         gitHub: "https://github.com/GrinninBarrett/platonic-friends-forever",
         liveURL: "https://pfforever.herokuapp.com/",
-        technologies: "Express.js, Sequelize/MySQL, Handlebars.js, Materialize"
+        technologies: "Express.js, Sequelize/MySQL, Handlebars.js, Materialize",
+        description: "Social networking app to make new friends with similar interests"
     },
     {
         id: 2,
@@ -129,7 +140,8 @@ const featuredProjects = [
         alt: "Skillet and Shaker application",
         gitHub: "https://github.com/GrinninBarrett/recipe-finder",
         liveURL: "https://grinninbarrett.github.io/recipe-finder/",
-        technologies: "JavaScript, HTML, CSS/Bulma"
+        technologies: "JavaScript, HTML, CSS/Bulma",
+        description: "Find and save food and drink recipes"
     },
 
     {
@@ -140,7 +152,8 @@ const featuredProjects = [
         alt: "Weather Dashboard application",
         gitHub: "https://github.com/GrinninBarrett/weather-dashboard",
         liveURL: "https://grinninbarrett.github.io/weather-dashboard/",
-        technologies: "OpenWeather API, JavaScript, HTML, CSS"
+        technologies: "OpenWeather API, JavaScript, HTML, CSS",
+        description: "See weather details and forecasts for your city"
     }
 ]
 
