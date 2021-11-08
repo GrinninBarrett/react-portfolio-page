@@ -15,7 +15,8 @@ const ProjectCard = (props) => {
       </picture>
       <div className="project-info flex-item flex-column">
         <h3 className="base-text">{props.name}</h3>
-        <p className="green-text card-tech">{props.tech}</p>
+        <p className="green-text quicksand card-content">{props.description}</p>
+        <p className="green-text card-content">{props.tech}</p>
         <a
           className="link light-text project-link"
           href={props.gitHub}
