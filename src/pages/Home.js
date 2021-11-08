@@ -57,6 +57,7 @@ const Home = ({ featuredProjects }) => {
               tech={project.technologies}
               gitHub={project.gitHub}
               live={project.liveURL}
+              description={project.description}
             />
           ))}
         </div>
