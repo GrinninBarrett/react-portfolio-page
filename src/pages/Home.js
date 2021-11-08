@@ -38,6 +38,10 @@ const Home = ({ featuredProjects }) => {
         </div>
       </section>
 
+      <section className="container flex-item">
+        <h2 className="base-text">Some of my skills</h2>
+      </section>
+
       <section id="recent-projects" className="container flex-item flex-column">
         <h2 id="recent-projects-heading" className="base-text">
           Recent Projects
