@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Skills from "../components/Skills";
 
 import ProjectCard from "../components/ProjectCard";
 
@@ -38,8 +39,9 @@ const Home = ({ featuredProjects }) => {
         </div>
       </section>
 
-      <section className="container flex-item">
+      <section className="container flex-item flex-column">
         <h2 className="base-text">Some of my skills</h2>
+        <Skills />
       </section>
 
       <section id="recent-projects" className="container flex-item flex-column">

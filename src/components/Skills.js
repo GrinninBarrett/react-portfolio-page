@@ -6,15 +6,20 @@ import { skills } from "../utils/skillsList";
 const Skills = () => {
   const handleDragStart = (e) => e.preventDefault();
 
-  return (
-    <section>
-      {skills.map((skill) => (
-        <a href={skill.url}>
-          <img src={skill.image} alt={skill.name} onDragStart={handleDragStart} role="presentation"></img>
-        </a>
-      ))}
-    </section>
-  );
+  const skillsImages = skills.map((skill) => (
+    <a href={skill.url}>
+      <img
+        src={skill.image}
+        alt={skill.name}
+        onDragStart={handleDragStart}
+        role="presentation"
+        height="100px"
+        width="100px"
+      ></img>
+    </a>
+  ));
+
+  return <AliceCarousel mouseTracking items={skillsImages} />;
 };
 
 export default Skills;
