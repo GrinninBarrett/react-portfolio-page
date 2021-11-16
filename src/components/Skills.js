@@ -8,18 +8,18 @@ const Skills = () => {
 
   const responsive = {
     480: {
-        items: 1,
+      items: 1,
     },
     768: {
-        items: 2
+      items: 2,
     },
     1024: {
-        items: 3,
+      items: 3,
     },
     1200: {
-        items: 4
-    }
-  }
+      items: 4,
+    },
+  };
 
   const skillsImages = skills.map((skill) => (
     <a href={skill.url}>
@@ -34,7 +34,9 @@ const Skills = () => {
     </a>
   ));
 
-  return <AliceCarousel mouseTracking items={skillsImages} responsive={responsive} />;
+  return (
+    <AliceCarousel mouseTracking items={skillsImages} responsive={responsive} />
+  );
 };
 
 export default Skills;
