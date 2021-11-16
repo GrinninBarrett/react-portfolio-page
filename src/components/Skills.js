@@ -6,6 +6,21 @@ import { skills } from "../utils/skillsList";
 const Skills = () => {
   const handleDragStart = (e) => e.preventDefault();
 
+  const responsive = {
+    480: {
+        items: 1,
+    },
+    768: {
+        items: 2
+    },
+    1024: {
+        items: 3,
+    },
+    1200: {
+        items: 4
+    }
+  }
+
   const skillsImages = skills.map((skill) => (
     <a href={skill.url}>
       <img
@@ -19,7 +34,7 @@ const Skills = () => {
     </a>
   ));
 
-  return <AliceCarousel mouseTracking items={skillsImages} />;
+  return <AliceCarousel mouseTracking items={skillsImages} responsive={responsive} />;
 };
 
 export default Skills;
