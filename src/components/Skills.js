@@ -19,6 +19,9 @@ const Skills = () => {
     1200: {
       items: 4,
     },
+    1500: {
+        items: 5
+    }
   };
 
   const skillsImages = skills.map((skill) => (
@@ -35,7 +38,14 @@ const Skills = () => {
   ));
 
   return (
-    <AliceCarousel mouseTracking items={skillsImages} responsive={responsive} />
+    <AliceCarousel
+      mouseTracking
+      items={skillsImages}
+      responsive={responsive}
+      autoPlay={true}
+      autoPlayInterval={2000}
+      infinite={true}
+    />
   );
 };
 
