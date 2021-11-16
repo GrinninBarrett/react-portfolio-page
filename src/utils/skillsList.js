@@ -2,7 +2,7 @@ const skills = [
     {
         id: 1,
         name: "React",
-        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_100/v1637103246/Portfolio%20Images/Skills%20Icons/react_pmwwzt.svg",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637103246/Portfolio%20Images/Skills%20Icons/react_pmwwzt.svg",
         url: "https://reactjs.org/"
     },
     {
