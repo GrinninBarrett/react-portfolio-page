@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 import Burger from './components/Burger';
 import MobileNav from './components/MobileNav';
 
-import { allProjects, featuredProjects } from "./projectList";
+import { allProjects, featuredProjects } from "./utils/projectList";
 import ScrollToTop from "./utils/ScrollToTop";
 
 
