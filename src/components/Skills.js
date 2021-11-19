@@ -45,6 +45,8 @@ const Skills = () => {
       autoPlay={true}
       autoPlayInterval={2000}
       infinite={true}
+      disableDotsControls={true}
+      disableButtonsControls={true}
     />
   );
 };
