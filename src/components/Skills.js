@@ -28,16 +28,14 @@ const Skills = () => {
   };
 
   const skillsImages = skills.map((skill) => (
-    <a href={skill.url}>
-      <img
-        src={skill.image}
-        alt={skill.name}
-        onDragStart={handleDragStart}
-        role="presentation"
-        height="100px"
-        width="100px"
-      ></img>
-    </a>
+    <img
+      src={skill.image}
+      alt={skill.name}
+      onDragStart={handleDragStart}
+      role="presentation"
+      height="100px"
+      width="100px"
+    ></img>
   ));
 
   return (
