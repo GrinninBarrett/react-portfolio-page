@@ -13,7 +13,7 @@ const skills = [
     },
     {
         id: 3,
-        name: "Express",
+        name: "Express.js",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637103497/Portfolio%20Images/Skills%20Icons/express_lsrbj0.svg",
         url: "http://expressjs.com/"
     },
@@ -55,7 +55,7 @@ const skills = [
     },
     {
         id: 10,
-        name: "JavaScrip",
+        name: "JavaScript",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637361118/Portfolio%20Images/Skills%20Icons/javascript_o8zgz0.svg",
         url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },

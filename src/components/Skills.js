@@ -28,14 +28,18 @@ const Skills = () => {
   };
 
   const skillsImages = skills.map((skill) => (
-    <img
-      src={skill.image}
-      alt={skill.name}
-      onDragStart={handleDragStart}
-      role="presentation"
-      height="100px"
-      width="100px"
-    ></img>
+    <div>
+      <img
+        src={skill.image}
+        alt={skill.name}
+        onDragStart={handleDragStart}
+        role="presentation"
+        height="100px"
+        width="100px"
+      />
+      <p>{skill.name}</p>
+    </div>
+
   ));
 
   return (
