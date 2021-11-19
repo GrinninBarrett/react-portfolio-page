@@ -55,9 +55,9 @@ const skills = [
     },
     {
         id: 10,
-        name: "Mongoose",
-        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_89,q_auto:eco/v1637360904/Portfolio%20Images/Skills%20Icons/mongoose-logo_mcynyc.png",
-        url: "https://mongoosejs.com/"
+        name: "JavaScrip",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637361118/Portfolio%20Images/Skills%20Icons/javascript_o8zgz0.svg",
+        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
 ]
 
