@@ -1,6 +1,9 @@
 import React from "react";
+
+// Alice Carousel from https://github.com/maxmarinich/react-alice-carousel
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+
 import { skills } from "../utils/skillsList";
 
 const Skills = () => {

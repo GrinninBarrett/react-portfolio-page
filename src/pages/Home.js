@@ -39,7 +39,7 @@ const Home = ({ featuredProjects }) => {
         </div>
       </section>
 
-      <section id="skills-section" className="container flex-item flex-column">
+      <section id="skills-section" className="flex-item flex-column">
         <h2 className="base-text">Some of my skills</h2>
         <Skills />
       </section>
