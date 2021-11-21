@@ -42,20 +42,20 @@ const Contact = () => {
     event.preventDefault();
   };
 
-  const handleNotify = (event) => {
-    const { target } = event;
-    const inputType = target.name;
-    const inputValue = target.value;
-    console.log(typeof inputType);
+  // const handleNotify = (event) => {
+  //   const { target } = event;
+  //   const inputType = target.name;
+  //   const inputValue = target.value;
+  //   console.log(typeof inputType);
 
-    if (!submitClicked) {
-      if (!inputValue.trim().length) {
-        warn(`Your ${inputType} is required.`);
-      }
-    }
+  //   if (!submitClicked) {
+  //     if (!inputValue.trim().length) {
+  //       warn(`Your ${inputType} is required.`);
+  //     }
+  //   }
 
-    setSubmitClicked(false);
-  };
+  //   setSubmitClicked(false);
+  // };
 
   // Simply triggers a notification for now - will update with database at a later time
   const handleFormSubmit = (event) => {
