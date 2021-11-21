@@ -29,13 +29,23 @@ const Home = ({ featuredProjects }) => {
             Pursuing my passion for building responsive, accessible web sites
             and applications
           </p>
-          <Link
-            id="learn-more"
-            className="link green-link base-text quicksand"
-            to="/about"
-          >
-            Learn More About Me
-          </Link>
+          <div className="flex-item landing-links">
+            <Link
+              id="learn-more"
+              className="link green-link base-text quicksand"
+              to="/about"
+            >
+              Learn More About Me
+            </Link>
+            <a
+              id="resume"
+              className="see-more-link link green-link base-text quicksand"
+              href="./assets/resume/CTB-Resume.pdf"
+              download="CTB-Resume.pdf"
+            >
+              Download My Resume
+            </a>
+          </div>
         </div>
       </section>
 
@@ -67,7 +77,10 @@ const Home = ({ featuredProjects }) => {
             />
           ))}
         </div>
-        <Link className="see-more-link link green-link base-text quicksand" to="/projects">
+        <Link
+          className="see-more-link link green-link base-text quicksand"
+          to="/projects"
+        >
           See All Projects
         </Link>
       </section>

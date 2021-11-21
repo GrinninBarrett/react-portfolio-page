@@ -113,10 +113,6 @@ footer {
     margin-top: 4em;
 }
 
-#learn-more {
-    margin-top: 25px;
-}
-
 #skills-section {
     background-color: rgb(244, 245, 244);
     margin: 2rem 0;
@@ -205,6 +201,12 @@ footer {
     border-radius: 15px;
 }
 
+.landing-links {
+    width: 75%;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+
 /* Style all links with green hover effect */
 .green-link:hover {
     background-color: var(--green-accent);
@@ -243,10 +245,6 @@ footer {
 .tucker-photo {
     height: 350px;
     width: 350px;
-}
-
-.see-more-link {
-    margin: 10px 0 50px 0;
 }
 
 .alice-carousel__stage-item {
