@@ -132,6 +132,20 @@ const Contact = () => {
           <ToastContainer pauseOnFocusLoss={false} pauseOnHover={false} />
         </form>
       </div>
+      <div class="container flex-item flex-column">
+        <h3 className="base-text center">
+          You can also send an email anytime at{" "}
+          <a
+            href="mailto:ctbarrett.tech@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+            id="email"
+          >
+            ctbarrett.tech@gmail.com
+          </a>
+          !
+        </h3>
+      </div>
     </main>
   );
 };
