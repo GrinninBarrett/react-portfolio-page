@@ -9,7 +9,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [submitClicked, setSubmitClicked] = useState(false);
+  // const [submitClicked, setSubmitClicked] = useState(false);
 
   const handleInputChange = (event) => {
     const { target } = event;
@@ -61,7 +61,7 @@ const Contact = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    setSubmitClicked(true);
+    // setSubmitClicked(true);
 
     if (
       !name.trim().length &&
