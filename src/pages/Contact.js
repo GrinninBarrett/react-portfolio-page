@@ -95,7 +95,7 @@ const Contact = () => {
             value={name}
             name="name"
             onChange={handleInputChange}
-            onBlur={handleNotify}
+            // onBlur={handleNotify}
             type="text"
             placeholder="Name"
             className="input-item"
@@ -105,7 +105,7 @@ const Contact = () => {
             value={email}
             name="email"
             onChange={handleInputChange}
-            onBlur={handleNotify}
+            // onBlur={handleNotify}
             type="text"
             placeholder="Email address"
             className="input-item"
@@ -115,7 +115,7 @@ const Contact = () => {
             value={message}
             name="message"
             onChange={handleInputChange}
-            onBlur={handleNotify}
+            // onBlur={handleNotify}
             type="text"
             placeholder="Enter your message here"
             className="input-item"
@@ -129,7 +129,7 @@ const Contact = () => {
           >
             Send Message
           </button>
-          <ToastContainer pauseOnFocusLoss={false} />
+          <ToastContainer pauseOnFocusLoss={false} pauseOnHover={false} />
         </form>
       </div>
     </main>
