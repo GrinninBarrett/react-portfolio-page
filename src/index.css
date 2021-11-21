@@ -155,6 +155,10 @@ footer {
     text-align: center;
 }
 
+#about-intro {
+    margin-bottom: 6rem;
+}
+
 #about-text-container {
     width: 50%;
 }
