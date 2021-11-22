@@ -30,6 +30,11 @@ const skills = [
         url: "https://nodejs.org/en/"
     },
     {
+        name: "MySQL",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_176,q_auto/v1637611593/Portfolio%20Images/Skills%20Icons/mysql_oidery.svg",
+        url: "https://dev.mysql.com/"
+    },
+    {
         name: "HTML",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637360637/Portfolio%20Images/Skills%20Icons/html-5_shbqqb.svg",
         url: "https://html.spec.whatwg.org/multipage/"
