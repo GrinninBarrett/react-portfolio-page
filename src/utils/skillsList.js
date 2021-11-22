@@ -30,6 +30,16 @@ const skills = [
         url: "https://nodejs.org/en/"
     },
     {
+        name: "Git",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_180,q_auto/v1637612268/Portfolio%20Images/Skills%20Icons/git-icon_ggiutp.svg",
+        url: "https://git-scm.com/"
+    },
+    {
+        name: "GitHub",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_260,w_260/v1637612266/Portfolio%20Images/Skills%20Icons/github-octocat_o4fkv1.svg",
+        url: "https://github.com/"
+    },
+    {
         name: "MySQL",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_176,q_auto/v1637611593/Portfolio%20Images/Skills%20Icons/mysql_oidery.svg",
         url: "https://dev.mysql.com/"
