@@ -59,6 +59,12 @@ const skills = [
         image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637361118/Portfolio%20Images/Skills%20Icons/javascript_o8zgz0.svg",
         url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
+    {
+        id: 11,
+        name: "Bootstrap",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_154,q_auto/v1637610959/Portfolio%20Images/Skills%20Icons/bootstrap_wpojga.svg",
+        url: "https://getbootstrap.com/"
+    },
 ]
 
 export { skills };
