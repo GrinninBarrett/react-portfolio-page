@@ -37,10 +37,10 @@ const About = () => {
         <Skills />
       </section>
 
-      <section className="container flex-item flex-column">
+      <section className="container flex-item flex-column about-resume-link">
         <a
           id="resume"
-          className="see-more-link link green-link base-text quicksand"
+          className="see-more-link link resume-link base-text quicksand"
           href="./assets/resume/CTB-Resume.pdf"
           download="CTB-Resume.pdf"
         >

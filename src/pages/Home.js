@@ -32,7 +32,7 @@ const Home = ({ featuredProjects }) => {
           <div className="flex-item landing-links">
             <Link
               id="learn-more"
-              className="link green-link base-text quicksand"
+              className="link see-more-link base-text quicksand"
               to="/about"
             >
               Learn More About Me

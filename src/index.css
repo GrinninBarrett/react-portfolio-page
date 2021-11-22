@@ -6,6 +6,7 @@
   --light-text: #ddf0ed;
   --medium-gray: #7b8687;
   --green-accent: #47684a;
+  --medium-green-accent: #709172;
   --light-green-accent: #b7dfba;
   --red-accent: #b4746c;
   --light-red-accent: #dbaca6;
@@ -202,7 +203,7 @@ footer {
 }
 
 .landing-links {
-    width: 75%;
+    width: 100%;
     margin-top: 2rem;
     justify-content: space-evenly;
 }
@@ -306,6 +307,28 @@ footer {
 
 .content-container {
     min-height: 80vh;
+}
+
+.about-resume-link {
+    width: 50%;
+    margin: 6rem auto;
+}
+
+.see-more-link {
+    background-color: var(--green-accent);
+    color: var(--background);
+    padding: 8px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.see-more-link:hover {
+    background-color: var(--medium-green-accent);
 }
 
 
@@ -457,6 +480,15 @@ footer {
 
     .button {
         width: 100%;
+    }
+
+    .landing-links {
+        flex-direction: column;
+    }
+
+    .see-more-link {
+        margin: 1rem auto;
+        width: 60%;
     }
 
 
