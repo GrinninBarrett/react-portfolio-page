@@ -80,6 +80,16 @@ const skills = [
         url: "https://getbootstrap.com/"
     },
     {
+        name: "Bulma",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_200,w_200/v1637612861/Portfolio%20Images/Skills%20Icons/bulma_hmiwhs.svg",
+        url: "https://bulma.io/"
+    },
+    {
+        name: "Materialize",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_131,w_131/v1637612945/Portfolio%20Images/Skills%20Icons/materializecss_s1fkae.svg",
+        url: "https://materializecss.com/",
+    },
+    {
         name: "jQuery",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637360689/Portfolio%20Images/Skills%20Icons/jquery_ojbebr.svg",
         url: "https://jquery.com/"
