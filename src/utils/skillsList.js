@@ -40,6 +40,11 @@ const skills = [
         url: "https://github.com/"
     },
     {
+        name: "JSON",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_177/v1637612396/Portfolio%20Images/Skills%20Icons/json_wowulg.svg",
+        url: "https://www.json.org/json-en.html"
+    },
+    {
         name: "MySQL",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_176,q_auto/v1637611593/Portfolio%20Images/Skills%20Icons/mysql_oidery.svg",
         url: "https://dev.mysql.com/"
@@ -88,6 +93,11 @@ const skills = [
         name: "Handlebars",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_512,w_512/v1637611227/Portfolio%20Images/Skills%20Icons/handlebars_d3xi5i.svg",
         url: "https://handlebarsjs.com/"
+    },
+    {
+        name: "VS Code",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_162,w_162/v1637612492/Portfolio%20Images/Skills%20Icons/visual-studio-code_ffliig.svg",
+        url: "https://code.visualstudio.com/"
     }
 
 
