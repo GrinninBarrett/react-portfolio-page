@@ -30,6 +30,11 @@ const skills = [
         url: "https://nodejs.org/en/"
     },
     {
+        name: "React Router",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_200,w_200/v1637612739/Portfolio%20Images/Skills%20Icons/react-router_v0bc7g.svg",
+        url: "https://github.com/remix-run/react-router"
+    },
+    {
         name: "Git",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_180,q_auto/v1637612268/Portfolio%20Images/Skills%20Icons/git-icon_ggiutp.svg",
         url: "https://git-scm.com/"
