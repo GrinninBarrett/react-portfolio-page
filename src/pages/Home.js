@@ -77,12 +77,14 @@ const Home = ({ featuredProjects }) => {
             />
           ))}
         </div>
-        <Link
-          className="see-more-link link green-link base-text quicksand"
-          to="/projects"
-        >
-          See All Projects
-        </Link>
+        <div className="all-projects-link-container flex-item">
+          <Link
+            className="see-more-link link base-text quicksand bottom-of-page-link"
+            to="/projects"
+          >
+            See All Projects
+          </Link>
+        </div>
       </section>
     </main>
   );

@@ -255,7 +255,6 @@ footer {
 .project-cards-container {
     flex-wrap: wrap;
     justify-content: center;
-    margin: 25px 0;
 }
 
 .project-card {
@@ -309,9 +308,13 @@ footer {
     min-height: 80vh;
 }
 
-.about-resume-link {
+.bottom-of-page-link {
     width: 50%;
     margin: 6rem auto;
+}
+
+.all-projects-link-container {
+    width: 50%;
 }
 
 .see-more-link {
@@ -489,6 +492,11 @@ footer {
     .see-more-link {
         margin: 1rem auto;
         width: 60%;
+    }
+
+    .all-projects-link-container {
+        width: 100%;
+        margin: 4rem 0;
     }
 
 

@@ -29,9 +29,9 @@ const Projects = ({ allProjects }) => {
           ))}
         </div>
       </section>
-      <section className="container flex-item flex-column">
+      <section className="container flex-item flex-column bottom-of-page-link">
         <a
-          className="see-more-link link green-link base-text quicksand"
+          className="see-more-link link base-text quicksand"
           href="https://github.com/grinninbarrett"
           target="_blank"
           rel="noreferrer"
