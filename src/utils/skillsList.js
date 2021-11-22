@@ -98,6 +98,11 @@ const skills = [
         name: "VS Code",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_162,w_162/v1637612492/Portfolio%20Images/Skills%20Icons/visual-studio-code_ffliig.svg",
         url: "https://code.visualstudio.com/"
+    },
+    {
+        name: "Figma",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_256,w_256/v1637612616/Portfolio%20Images/Skills%20Icons/figma_qd8b1c.svg",
+        url: "https://www.figma.com/"
     }
 
 
