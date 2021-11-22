@@ -70,6 +70,11 @@ const skills = [
         url: "https://heroku.com"
     },
     {
+        name: "Netlify",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_146,q_auto/v1637612103/Portfolio%20Images/Skills%20Icons/netlify_abdvhs.svg",
+        url: "https://www.netlify.com/"
+    },
+    {
         name: "Handlebars",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_512,w_512/v1637611227/Portfolio%20Images/Skills%20Icons/handlebars_d3xi5i.svg",
         url: "https://handlebarsjs.com/"
