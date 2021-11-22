@@ -35,6 +35,16 @@ const skills = [
         url: "https://dev.mysql.com/"
     },
     {
+        name: "Sequelize",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_fit,h_296,w_296/v1637611694/Portfolio%20Images/Skills%20Icons/sequelize_wgiyax.svg",
+        url: "https://sequelize.org/"
+    },
+    {
+        name: "Insomnia",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_149,q_auto/v1637611978/Portfolio%20Images/Skills%20Icons/insomnia_qyhqo5.svg",
+        url: "https://insomnia.rest/"
+    },
+    {
         name: "HTML",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637360637/Portfolio%20Images/Skills%20Icons/html-5_shbqqb.svg",
         url: "https://html.spec.whatwg.org/multipage/"
