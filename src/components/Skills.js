@@ -9,6 +9,7 @@ import { skills } from "../utils/skillsList";
 const Skills = () => {
   const handleDragStart = (e) => e.preventDefault();
 
+  // Sets breakpoints for carousel
   const responsive = {
     480: {
       items: 1,
