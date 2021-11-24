@@ -151,6 +151,18 @@ const allProjects = [
     technologies: "HTML, CSS",
     description: "Documentation page to easily find important information",
   },
+
+  {
+    id: 12,
+    name: "Google Homepage Recreation",
+    primarySource: "",
+    image: "",
+    alt: "Google Homepage Recreation",
+    gitHub: "",
+    liveURL: "",
+    technologies: "",
+    description: "Highly accurate visual-only recreation of the Google Homepage"
+  }
 ];
 
 const featuredProjects = [
