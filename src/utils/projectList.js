@@ -155,12 +155,12 @@ const allProjects = [
   {
     id: 12,
     name: "Google Homepage Recreation",
-    primarySource: "",
-    image: "",
+    primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_459,q_auto/v1637720748/Portfolio%20Images/127.0.0.1_5500_index.html_1_gr6z4i.png",
+    image: "./assets/images/google-homepage.png",
     alt: "Google Homepage Recreation",
-    gitHub: "",
-    liveURL: "",
-    technologies: "",
+    gitHub: "https://github.com/GrinninBarrett/google-homepage",
+    liveURL: "#",
+    technologies: "CSS, HTML",
     description: "Highly accurate visual-only recreation of the Google Homepage"
   }
 ];

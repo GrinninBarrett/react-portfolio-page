@@ -25,14 +25,22 @@ const ProjectCard = (props) => {
         >
           View on GitHub
         </a>
-        <a
-          className="link light-text project-link"
-          href={props.live}
-          target="_blank"
-          rel="noreferrer"
-        >
-          See Live App
-        </a>
+        {props.name === "Google Homepage Recreation" ? (
+          <div
+            className="link light-text project-link"
+          >
+            See Live App
+          </div>
+        ) : (
+          <a
+            className="link light-text project-link"
+            href={props.live}
+            target="_blank"
+            rel="noreferrer"
+          >
+            See Live App
+          </a>
+        )}
       </div>
     </article>
   );
