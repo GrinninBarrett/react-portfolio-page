@@ -1,7 +1,14 @@
-import React from "react";
-import Skills from "../components/Skills";
+import React from 'react';
+import styled from 'styled-components';
+import Skills from '../components/Skills';
 
 const About = () => {
+  const StyledSkillsSection = styled.section`
+    background-color: rgb(244, 245, 244);
+    margin: 2rem 0;
+    padding: 0 0 2rem 0;
+  `;
+
   return (
     <main className="content-container">
       <section id="about-intro" className="intro container flex-item">
@@ -23,19 +30,23 @@ const About = () => {
               time ago that public school teaching is not.
             </p>
             <p className="base-text">
-              As someone who always loved technology, but was too deeply involved in
-              the pursuit of a career in music, I long viewed the field of
-              technology as something not meant for a musician like me.
-              Now, rather than simply benefiting from advances in technology, I plan to contribute.
+              As someone who always loved technology, but was too deeply
+              involved in the pursuit of a career in music, I long viewed the
+              field of technology as something not meant for a musician like me.
+              Now, rather than simply benefiting from advances in technology, I
+              plan to contribute.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="skills-section" className="flex-item flex-column">
+      <StyledSkillsSection
+        id="skills-section"
+        className="flex-item flex-column"
+      >
         <h2 className="base-text">Some of my skills</h2>
         <Skills />
-      </section>
+      </StyledSkillsSection>
 
       <section className="container flex-item flex-column bottom-of-page-link">
         <a
