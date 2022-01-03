@@ -42,6 +42,21 @@ const Home = ({ featuredProjects }) => {
     }
   `;
 
+  const StyledTuckerPhoto = styled.img`
+    height: 350px;
+    width: 350px;
+
+    @media screen and (max-width: 992px) {
+      height: 300px;
+      width: 300px;
+    }
+
+    @media screen and (max-height: 750px) {
+      height: 300px;
+      width: 300px;
+    }
+  `;
+
   const StyledSelfDescription = styled.p`
     font-size: 1.5em;
 
@@ -127,9 +142,9 @@ const Home = ({ featuredProjects }) => {
               A full stack web developer
             </StyledSelfDescription>
           </StyledHeadingContainer>
-          <picture className="tucker-photo-container">
+          <picture>
             <source srcSet="https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1633134190/Portfolio%20Images/tucker-photo_rlk93d.webp" />
-            <img
+            <StyledTuckerPhoto
               className="tucker-photo"
               src="assets/images/tucker-photo.png"
               alt="Tucker Barrett, smiling while on a hike in Korea"

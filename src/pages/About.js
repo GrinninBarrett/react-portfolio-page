@@ -32,6 +32,21 @@ const About = () => {
     }
   `;
 
+  const StyledTuckerPhoto = styled.img`
+    height: 350px;
+    width: 350px;
+
+    @media screen and (max-width: 992px) {
+      height: 300px;
+      width: 300px;
+    }
+
+    @media screen and (max-height: 750px) {
+      height: 300px;
+      width: 300px;
+    }
+  `;
+
   const StyledSkillsSection = styled.section`
     background-color: rgb(244, 245, 244);
     margin: 6rem 0 4rem 0;
@@ -79,7 +94,7 @@ const About = () => {
         <StyledTopIntroContainer className="top-intro-container flex-item">
           <picture>
             <source srcSet="https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_625,q_auto/v1633135163/Portfolio%20Images/tucker-photo-3_a2ngp1.webp" />
-            <img
+            <StyledTuckerPhoto
               className="tucker-photo"
               src="./assets/images/tucker-photo-3.png"
               alt="Tucker wearing a cat sweatshirt and cat blazer"

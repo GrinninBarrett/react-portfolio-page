@@ -230,10 +230,10 @@ textarea:focus {
   justify-content: space-between;
 } */
 
-.tucker-photo {
+/* .tucker-photo {
   height: 350px;
   width: 350px;
-}
+} */
 
 .alice-carousel__stage-item {
   text-align: center;
@@ -376,10 +376,10 @@ textarea:focus {
     width: 100%;
   } */
 
-  .tucker-photo {
+  /* .tucker-photo {
     height: 300px;
     width: 300px;
-  }
+  } */
 
   .button {
     width: 50%;
@@ -480,9 +480,9 @@ textarea:focus {
   }
 }
 
-@media screen and (max-height: 750px) {
+/* @media screen and (max-height: 750px) {
   .tucker-photo {
     height: 300px;
     width: 300px;
   }
-}
+} */
