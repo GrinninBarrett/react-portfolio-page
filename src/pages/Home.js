@@ -8,6 +8,10 @@ import ProjectCard from '../components/ProjectCard';
 const Home = ({ featuredProjects }) => {
   // Styled Components
 
+  const StyledMain = styled.main`
+    min-height: 80vh;
+  `;
+
   const StyledMainIntro = styled.section`
     justify-content: space-evenly;
     margin: 4em auto;
@@ -71,7 +75,7 @@ const Home = ({ featuredProjects }) => {
 
   const StyledSkillsSection = styled.section`
     background-color: rgb(244, 245, 244);
-    margin: 4rem 0;
+    margin: 6rem 0 4rem 0;
     padding: 0 0 2rem 0;
   `;
 
@@ -81,7 +85,7 @@ const Home = ({ featuredProjects }) => {
   `;
 
   return (
-    <main>
+    <StyledMain>
       <StyledMainIntro
         id="intro"
         className="intro container flex-item flex-column"
@@ -173,7 +177,7 @@ const Home = ({ featuredProjects }) => {
           </Link>
         </div>
       </section>
-    </main>
+    </StyledMain>
   );
 };
 

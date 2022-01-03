@@ -88,6 +88,10 @@ const Contact = () => {
 
   // Styled Components
 
+  const StyledMain = styled.main`
+    min-height: 80vh;
+  `;
+
   const StyledEmail = styled.a`
     color: var(--green-accent);
     &:hover {
@@ -132,7 +136,7 @@ const Contact = () => {
   `;
 
   return (
-    <main className="content-container">
+    <StyledMain>
       <div className="container flex-item flex-column">
         <h2 className="base-text">Get in Touch!</h2>
         <StyledForm className="flex-item flex-column">
@@ -192,7 +196,7 @@ const Contact = () => {
           !
         </h3>
       </div>
-    </main>
+    </StyledMain>
   );
 };
 

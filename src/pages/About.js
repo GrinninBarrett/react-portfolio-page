@@ -5,6 +5,10 @@ import Skills from '../components/Skills';
 const About = () => {
   // Styled Components
 
+  const StyledMain = styled.main`
+    min-height: 80vh;
+  `;
+
   const StyledAboutIntro = styled.section`
     justify-content: space-evenly;
     margin: 4em auto;
@@ -30,7 +34,7 @@ const About = () => {
 
   const StyledSkillsSection = styled.section`
     background-color: rgb(244, 245, 244);
-    margin: 4rem 0;
+    margin: 6rem 0 4rem 0;
     padding: 0 0 2rem 0;
   `;
 
@@ -43,7 +47,7 @@ const About = () => {
   `;
 
   return (
-    <main className="content-container">
+    <StyledMain>
       <StyledAboutIntro id="about-intro" className="intro container flex-item">
         <StyledTopIntroContainer className="top-intro-container flex-item">
           <picture>
@@ -94,7 +98,7 @@ const About = () => {
           Download My Resume
         </a>
       </section>
-    </main>
+    </StyledMain>
   );
 };
 

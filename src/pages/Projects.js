@@ -6,13 +6,17 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = ({ allProjects }) => {
   // Styled Components
 
+  const StyledMain = styled.main`
+    min-height: 80vh;
+  `;
+
   const StyledProjectCardsContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
   `;
 
   return (
-    <main>
+    <StyledMain>
       <section id="recent-projects" className="container flex-item flex-column">
         <h2 id="recent-projects-heading" className="base-text">
           Recent Projects
@@ -47,7 +51,7 @@ const Projects = ({ allProjects }) => {
           See more on GitHub
         </a>
       </section>
-    </main>
+    </StyledMain>
   );
 };
 

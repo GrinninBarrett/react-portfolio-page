@@ -291,9 +291,9 @@ textarea:focus {
   background-color: var(--green-accent);
 } */
 
-.content-container {
+/* .content-container {
   min-height: 80vh;
-}
+} */
 
 .bottom-of-page-link {
   width: 50%;
