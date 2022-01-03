@@ -353,9 +353,9 @@ textarea:focus {
   color: var(--light-green-accent);
 } */
 
-.social-link:hover {
+/* .social-link:hover {
   color: var(--light-red-accent);
-}
+} */
 
 /* Media queries for smaller screens */
 
