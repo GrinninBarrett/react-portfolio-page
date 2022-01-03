@@ -3,6 +3,19 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
+  // Styled Components
+
+  const StyledFooter = styled.footer`
+    background-color: var(--green-accent);
+    padding: 35px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 35px 0 10px 0;
+    }
+  `;
   const StyledFooterNav = styled.nav`
     justify-content: space-between;
 
@@ -21,7 +34,7 @@ const Footer = () => {
   `;
 
   return (
-    <footer>
+    <StyledFooter>
       <div className="container">
         <StyledFooterNav
           id="footer-nav"
@@ -153,7 +166,7 @@ const Footer = () => {
           </p>
         </StyledCopyright>
       </div>
-    </footer>
+    </StyledFooter>
   );
 };
 

@@ -81,13 +81,13 @@ textarea:focus {
   box-shadow: 0 5px 10px var(--medium-gray);
 } */
 
-footer {
+/* footer {
   background-color: var(--green-accent);
   padding: 35px 0;
   position: relative;
   bottom: 0;
   left: 0;
-}
+} */
 
 /* #main-nav {
     justify-content: space-between;
@@ -385,9 +385,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  footer {
+  /* footer {
     padding: 35px 0 10px 0;
-  }
+  } */
 
   /* #nav-links {
     background-color: var(--background);
