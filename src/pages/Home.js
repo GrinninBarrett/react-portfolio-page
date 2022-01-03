@@ -84,6 +84,11 @@ const Home = ({ featuredProjects }) => {
     justify-content: center;
   `;
 
+  const StyledBottomOfPageLink = styled(Link)`
+    width: 50%;
+    margin: 6rem auto;
+  `;
+
   return (
     <StyledMain>
       <StyledMainIntro
@@ -169,12 +174,12 @@ const Home = ({ featuredProjects }) => {
           ))}
         </StyledProjectCardsContainer>
         <div className="all-projects-link-container flex-item">
-          <Link
+          <StyledBottomOfPageLink
             className="see-more-link link base-text quicksand bottom-of-page-link"
             to="/projects"
           >
             See All Projects
-          </Link>
+          </StyledBottomOfPageLink>
         </div>
       </section>
     </StyledMain>

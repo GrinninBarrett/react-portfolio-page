@@ -46,6 +46,11 @@ const About = () => {
     }
   `;
 
+  const StyledBottomOfPageLink = styled.section`
+    width: 50%;
+    margin: 6rem auto;
+  `;
+
   return (
     <StyledMain>
       <StyledAboutIntro id="about-intro" className="intro container flex-item">
@@ -88,7 +93,7 @@ const About = () => {
         <Skills />
       </StyledSkillsSection>
 
-      <section className="container flex-item flex-column bottom-of-page-link">
+      <StyledBottomOfPageLink className="container flex-item flex-column bottom-of-page-link">
         <a
           id="resume"
           className="see-more-link link resume-link base-text quicksand"
@@ -97,7 +102,7 @@ const About = () => {
         >
           Download My Resume
         </a>
-      </section>
+      </StyledBottomOfPageLink>
     </StyledMain>
   );
 };

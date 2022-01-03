@@ -15,6 +15,11 @@ const Projects = ({ allProjects }) => {
     justify-content: center;
   `;
 
+  const StyledBottomOfPageLink = styled.section`
+    width: 50%;
+    margin: 6rem auto;
+  `;
+
   return (
     <StyledMain>
       <section id="recent-projects" className="container flex-item flex-column">
@@ -41,7 +46,7 @@ const Projects = ({ allProjects }) => {
           ))}
         </StyledProjectCardsContainer>
       </section>
-      <section className="container flex-item flex-column bottom-of-page-link">
+      <StyledBottomOfPageLink className="container flex-item flex-column bottom-of-page-link">
         <a
           className="see-more-link link base-text quicksand"
           href="https://github.com/grinninbarrett"
@@ -50,7 +55,7 @@ const Projects = ({ allProjects }) => {
         >
           See more on GitHub
         </a>
-      </section>
+      </StyledBottomOfPageLink>
     </StyledMain>
   );
 };
