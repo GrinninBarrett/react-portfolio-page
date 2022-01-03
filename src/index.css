@@ -345,13 +345,13 @@ textarea:focus {
   box-shadow: 0 5px 10px var(--medium-gray);
 } */
 
-.footer-nav-item {
+/* .footer-nav-item {
   margin: 0 10px;
-}
+} */
 
-.footer-link:hover {
+/* .footer-link:hover {
   color: var(--light-green-accent);
-}
+} */
 
 .social-link:hover {
   color: var(--light-red-accent);
@@ -475,9 +475,9 @@ textarea:focus {
     margin: 2em 0;
   } */
 
-  .footer-nav-item {
+  /* .footer-nav-item {
     margin: 0.4em 0;
-  }
+  } */
 }
 
 /* @media screen and (max-height: 750px) {

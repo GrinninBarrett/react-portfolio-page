@@ -24,6 +24,20 @@ const Footer = () => {
     }
   `;
 
+  const StyledFooterNavItem = styled(NavLink)`
+    margin: 0 10px;
+
+    @media screen and (max-width: 768px) {
+      margin: 0.4em 0;
+    }
+  `;
+
+  const StyledFooterLink = styled(Link)`
+    &:hover {
+      color: var(--light-green-accent);
+    }
+  `;
+
   const StyledLeftFooterLinkContainer = styled.div`
     width: 40%;
     justify-content: space-between;
@@ -59,15 +73,18 @@ const Footer = () => {
             id="left-footer-link-container"
             className="flex-item footer-flex"
           >
-            <Link className="logo light-text link footer-link" to="/">
+            <StyledFooterLink
+              className="logo light-text link footer-link"
+              to="/"
+            >
               T
-            </Link>
+            </StyledFooterLink>
             <div id="footer-nav-links">
               <StyledNavList
                 id="footer-nav-menu"
                 className="flex-item nav-list"
               >
-                <NavLink
+                <StyledFooterNavItem
                   className="footer-nav-item nav-item link light-link"
                   exact
                   to="/"
@@ -77,8 +94,8 @@ const Footer = () => {
                   }}
                 >
                   Home
-                </NavLink>
-                <NavLink
+                </StyledFooterNavItem>
+                <StyledFooterNavItem
                   className="footer-nav-item nav-item link light-link"
                   exact
                   to="/about"
@@ -88,8 +105,8 @@ const Footer = () => {
                   }}
                 >
                   About
-                </NavLink>
-                <NavLink
+                </StyledFooterNavItem>
+                <StyledFooterNavItem
                   className="footer-nav-item nav-item link light-link"
                   exact
                   to="/projects"
@@ -99,8 +116,8 @@ const Footer = () => {
                   }}
                 >
                   Projects
-                </NavLink>
-                <NavLink
+                </StyledFooterNavItem>
+                <StyledFooterNavItem
                   className="footer-nav-item nav-item link light-link"
                   exact
                   to="/contact"
@@ -110,13 +127,13 @@ const Footer = () => {
                   }}
                 >
                   Contact
-                </NavLink>
+                </StyledFooterNavItem>
               </StyledNavList>
             </div>
           </StyledLeftFooterLinkContainer>
           <StyledFooterSocialLinks id="footer-social-links">
             <a
-              className="social-link footer-link link light-text"
+              className="social-link link light-text"
               href="https://github.com/GrinninBarrett"
               target="_blank"
               rel="noreferrer"
@@ -134,7 +151,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className="social-link footer-link link light-text"
+              className="social-link link light-text"
               href="https://www.linkedin.com/in/tucker-barrett-10015645/"
               target="_blank"
               rel="noreferrer"
@@ -152,7 +169,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className="social-link footer-link link light-text"
+              className="social-link link light-text"
               href="https://www.instagram.com/tuckabaret/"
               target="_blank"
               rel="noreferrer"
@@ -173,14 +190,14 @@ const Footer = () => {
         </StyledFooterNav>
         <StyledCopyright id="copyright">
           <p>
-            <a
+            <StyledFooterLink
               className="light-text quicksand footer-link"
               href="https://github.com/GrinninBarrett"
               target="_blank"
               rel="noreferrer"
             >
               &copy; 2021 Tucker Barrett
-            </a>
+            </StyledFooterLink>
           </p>
         </StyledCopyright>
       </div>
