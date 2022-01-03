@@ -93,11 +93,20 @@ const Contact = () => {
     }
   `;
 
+  const StyledForm = styled.form`
+    width: 50%;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: 992px) {
+      width: 80%;
+    }
+  `;
+
   return (
     <main className="content-container">
       <div className="container flex-item flex-column">
         <h2 className="base-text">Get in Touch!</h2>
-        <form className="flex-item flex-column">
+        <StyledForm className="flex-item flex-column">
           <input
             id="name"
             value={name}
@@ -138,7 +147,7 @@ const Contact = () => {
             Send Message
           </button>
           <ToastContainer pauseOnFocusLoss={false} pauseOnHover={false} />
-        </form>
+        </StyledForm>
       </div>
       <div class="container flex-item flex-column">
         <h3 className="base-text center">

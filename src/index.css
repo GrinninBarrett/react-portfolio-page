@@ -57,10 +57,10 @@ h5 {
   font-size: 1.2em;
 }
 
-form {
+/* form {
   width: 50%;
   margin-bottom: 4rem;
-}
+} */
 
 input,
 textarea {
@@ -362,9 +362,9 @@ footer {
     font-size: 2em;
   }
 
-  form {
+  /* form {
     width: 80%;
-  }
+  } */
 
   /* #description {
     font-size: 1.2em;
