@@ -75,6 +75,11 @@ const Home = ({ featuredProjects }) => {
     padding: 0 0 2rem 0;
   `;
 
+  const StyledProjectCardsContainer = styled.div`
+    flex-wrap: wrap;
+    justify-content: center;
+  `;
+
   return (
     <main>
       <StyledMainIntro
@@ -141,7 +146,7 @@ const Home = ({ featuredProjects }) => {
           Recent Projects
         </h2>
 
-        <div
+        <StyledProjectCardsContainer
           id="recent-project-cards-container"
           className="flex-item project-cards-container"
         >
@@ -158,7 +163,7 @@ const Home = ({ featuredProjects }) => {
               description={project.description}
             />
           ))}
-        </div>
+        </StyledProjectCardsContainer>
         <div className="all-projects-link-container flex-item">
           <Link
             className="see-more-link link base-text quicksand bottom-of-page-link"

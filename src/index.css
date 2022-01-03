@@ -239,10 +239,10 @@ textarea:focus {
   text-align: center;
 }
 
-.project-cards-container {
+/* .project-cards-container {
   flex-wrap: wrap;
   justify-content: center;
-}
+} */
 
 .project-card {
   position: relative;

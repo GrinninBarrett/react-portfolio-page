@@ -1,8 +1,16 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
 
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from '../components/ProjectCard';
 
 const Projects = ({ allProjects }) => {
+  // Styled Components
+
+  const StyledProjectCardsContainer = styled.div`
+    flex-wrap: wrap;
+    justify-content: center;
+  `;
+
   return (
     <main>
       <section id="recent-projects" className="container flex-item flex-column">
@@ -10,7 +18,7 @@ const Projects = ({ allProjects }) => {
           Recent Projects
         </h2>
 
-        <div
+        <StyledProjectCardsContainer
           id="recent-project-cards-container"
           className="flex-item project-cards-container"
         >
@@ -27,7 +35,7 @@ const Projects = ({ allProjects }) => {
               description={project.description}
             />
           ))}
-        </div>
+        </StyledProjectCardsContainer>
       </section>
       <section className="container flex-item flex-column bottom-of-page-link">
         <a
