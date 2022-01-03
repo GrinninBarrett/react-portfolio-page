@@ -446,12 +446,12 @@ textarea:focus {
     align-items: flex-start;
   }
 
-  .nav-list {
+  /* .nav-list {
     flex-direction: column;
     justify-content: center;
     margin-top: 1em;
     padding: 0;
-  }
+  } */
 
   .button {
     width: 100%;

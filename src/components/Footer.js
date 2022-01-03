@@ -39,6 +39,15 @@ const Footer = () => {
     }
   `;
 
+  const StyledNavList = styled.div`
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 1em;
+      padding: 0;
+    }
+  `;
+
   return (
     <StyledFooter>
       <div className="container">
@@ -54,7 +63,10 @@ const Footer = () => {
               T
             </Link>
             <div id="footer-nav-links">
-              <div id="footer-nav-menu" className="flex-item nav-list">
+              <StyledNavList
+                id="footer-nav-menu"
+                className="flex-item nav-list"
+              >
                 <NavLink
                   className="footer-nav-item nav-item link light-link"
                   exact
@@ -99,7 +111,7 @@ const Footer = () => {
                 >
                   Contact
                 </NavLink>
-              </div>
+              </StyledNavList>
             </div>
           </StyledLeftFooterLinkContainer>
           <StyledFooterSocialLinks id="footer-social-links">

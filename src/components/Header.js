@@ -37,6 +37,15 @@ const Header = () => {
     }
   `;
 
+  const StyledNavList = styled.div`
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 1em;
+      padding: 0;
+    }
+  `;
+
   return (
     <header>
       <div className="container">
@@ -45,7 +54,7 @@ const Header = () => {
             T
           </StyledLogo>
           <StyledNavLinksContainer id="nav-links">
-            <div id="nav-menu" className="flex-item nav-list">
+            <StyledNavList id="nav-menu" className="flex-item nav-list">
               <StyledMainNavItem
                 className="main-nav-item nav-item link green-link base-text"
                 exact
@@ -90,7 +99,7 @@ const Header = () => {
               >
                 Contact
               </StyledMainNavItem>
-            </div>
+            </StyledNavList>
           </StyledNavLinksContainer>
         </StyledNav>
       </div>
