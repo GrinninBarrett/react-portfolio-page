@@ -12,9 +12,8 @@ import Contact from './pages/Contact';
 import Burger from './components/Burger';
 import MobileNav from './components/MobileNav';
 
-import { allProjects, featuredProjects } from "./utils/projectList";
-import ScrollToTop from "./utils/ScrollToTop";
-
+import { allProjects, featuredProjects } from './utils/projectList';
+import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -45,8 +44,8 @@ function App() {
 
       <Footer />
       <div>
-          <Burger open={open} setOpen={setOpen} aria-label="Menu" />
-          <MobileNav open={open} setOpen={setOpen} />
+        <Burger open={open} setOpen={setOpen} aria-label="Menu" />
+        <MobileNav open={open} setOpen={setOpen} />
       </div>
     </Router>
   );
