@@ -1,20 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Skills from "../components/Skills";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Skills from '../components/Skills';
 
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from '../components/ProjectCard';
 
 const Home = ({ featuredProjects }) => {
+  const StyledHeadingContainer = styled.div`
+    text-align: center;
+    margin-top: 0;
+  `;
+
   return (
     <main>
       <section id="intro" className="intro container flex-item flex-column">
         <div className="top-intro-container flex-item">
-          <div id="heading-container">
+          <StyledHeadingContainer id="heading-container">
             <h1 className="base-text">Hey! I'm Tucker Barrett.</h1>
             <p id="description" className="base-text quicksand">
               A full stack web developer
             </p>
-          </div>
+          </StyledHeadingContainer>
           <picture className="tucker-photo-container">
             <source srcSet="https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1633134190/Portfolio%20Images/tucker-photo_rlk93d.webp" />
             <img

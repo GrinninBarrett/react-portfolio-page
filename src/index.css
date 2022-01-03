@@ -414,10 +414,10 @@ footer {
     z-index: 2;
   }
 
-  #heading-container {
+  /* #heading-container {
     text-align: center;
     margin-top: 0;
-  }
+  } */
 
   #project-container {
     padding-left: 3em;
