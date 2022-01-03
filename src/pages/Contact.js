@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import { validateEmail } from "../utils/helpers";
+import { validateEmail } from '../utils/helpers';
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   // const [submitClicked, setSubmitClicked] = useState(false);
 
   const handleInputChange = (event) => {
@@ -16,9 +17,9 @@ const Contact = () => {
     const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === "name") {
+    if (inputType === 'name') {
       setName(inputValue);
-    } else if (inputType === "email") {
+    } else if (inputType === 'email') {
       setEmail(inputValue);
     } else {
       setMessage(inputValue);
@@ -68,22 +69,29 @@ const Contact = () => {
       !validateEmail(email) &&
       !message.trim().length
     ) {
-      warn("All fields are required.");
+      warn('All fields are required.');
     } else {
       if (!name.trim().length) {
-        warn("Please enter your name.");
+        warn('Please enter your name.');
       } else if (!validateEmail(email)) {
-        warn("Please enter a vaild email address.");
+        warn('Please enter a vaild email address.');
       } else if (!message.trim().length) {
         warn(`You don't want to send a blank message, do you?`);
       } else {
         success(`Your message has been sent successfully!`);
-        setName("");
-        setEmail("");
-        setMessage("");
+        setName('');
+        setEmail('');
+        setMessage('');
       }
     }
   };
+
+  const StyledEmail = styled.a`
+    color: var(--green-accent);
+    &:hover {
+      color: var(--red-accent);
+    }
+  `;
 
   return (
     <main className="content-container">
@@ -134,15 +142,15 @@ const Contact = () => {
       </div>
       <div class="container flex-item flex-column">
         <h3 className="base-text center">
-          You can also send an email anytime at{" "}
-          <a
+          You can also send an email anytime at{' '}
+          <StyledEmail
             href="mailto:ctbarrett.tech@gmail.com"
             rel="noreferrer"
             target="_blank"
             id="email"
           >
             ctbarrett.tech@gmail.com
-          </a>
+          </StyledEmail>
           !
         </h3>
       </div>

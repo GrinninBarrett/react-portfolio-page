@@ -118,13 +118,13 @@ footer {
   padding: 0 0 2rem 0;
 } */
 
-#email {
+/* #email {
   color: var(--green-accent);
 }
 
 #email:hover {
   color: var(--red-accent);
-}
+} */
 
 #footer-nav {
   justify-content: space-between;
