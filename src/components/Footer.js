@@ -16,6 +16,10 @@ const Footer = () => {
     justify-content: space-between;
   `;
 
+  const StyledCopyright = styled.div`
+    text-align: center;
+  `;
+
   return (
     <footer>
       <div className="container">
@@ -136,7 +140,7 @@ const Footer = () => {
             </a>
           </div>
         </StyledFooterNav>
-        <div id="copyright">
+        <StyledCopyright id="copyright">
           <p>
             <a
               className="light-text quicksand footer-link"
@@ -147,7 +151,7 @@ const Footer = () => {
               &copy; 2021 Tucker Barrett
             </a>
           </p>
-        </div>
+        </StyledCopyright>
       </div>
     </footer>
   );

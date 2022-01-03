@@ -9,9 +9,13 @@ const About = () => {
     padding: 0 0 2rem 0;
   `;
 
+  const StyledAboutIntro = styled.section`
+    margin-bottom: 6rem;
+  `;
+
   return (
     <main className="content-container">
-      <section id="about-intro" className="intro container flex-item">
+      <StyledAboutIntro id="about-intro" className="intro container flex-item">
         <div className="top-intro-container flex-item">
           <picture>
             <source srcSet="https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_625,q_auto/v1633135163/Portfolio%20Images/tucker-photo-3_a2ngp1.webp" />
@@ -38,7 +42,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </section>
+      </StyledAboutIntro>
 
       <StyledSkillsSection
         id="skills-section"
