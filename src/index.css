@@ -118,15 +118,6 @@ footer {
   padding: 0 0 2rem 0;
 } */
 
-#projects-heading {
-  padding-left: 3em;
-}
-
-#contact {
-  justify-content: space-evenly;
-  height: 50vh;
-}
-
 #email {
   color: var(--green-accent);
 }
