@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Header = () => {
+  // Styled Components
+
   const StyledNav = styled.nav`
     justify-content: space-between;
     height: 100%;
