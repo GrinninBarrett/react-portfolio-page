@@ -300,9 +300,9 @@ textarea:focus {
   margin: 6rem auto;
 } */
 
-.all-projects-link-container {
+/* .all-projects-link-container {
   width: 50%;
-}
+} */
 
 .see-more-link {
   background-color: var(--green-accent);
@@ -466,10 +466,10 @@ textarea:focus {
     width: 60%;
   }
 
-  .all-projects-link-container {
+  /* .all-projects-link-container {
     width: 100%;
     margin: 4rem 0;
-  }
+  } */
 
   /* .main-nav-item {
     margin: 2em 0;

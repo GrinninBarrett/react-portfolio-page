@@ -84,6 +84,15 @@ const Home = ({ featuredProjects }) => {
     justify-content: center;
   `;
 
+  const StyledAllProjectsLinkContainer = styled.div`
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 4rem 0;
+    }
+  `;
+
   const StyledBottomOfPageLink = styled(Link)`
     width: 50%;
     margin: 6rem auto;
@@ -173,14 +182,14 @@ const Home = ({ featuredProjects }) => {
             />
           ))}
         </StyledProjectCardsContainer>
-        <div className="all-projects-link-container flex-item">
+        <StyledAllProjectsLinkContainer className="all-projects-link-container flex-item">
           <StyledBottomOfPageLink
             className="see-more-link link base-text quicksand bottom-of-page-link"
             to="/projects"
           >
             See All Projects
           </StyledBottomOfPageLink>
-        </div>
+        </StyledAllProjectsLinkContainer>
       </section>
     </StyledMain>
   );
