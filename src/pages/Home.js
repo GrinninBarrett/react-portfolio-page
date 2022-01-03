@@ -34,6 +34,12 @@ const Home = ({ featuredProjects }) => {
     }
   `;
 
+  const StyledSkillsSection = styled.section`
+    background-color: rgb(244, 245, 244);
+    margin: 2rem 0;
+    padding: 0 0 2rem 0;
+  `;
+
   return (
     <main>
       <section id="intro" className="intro container flex-item flex-column">
@@ -84,10 +90,13 @@ const Home = ({ featuredProjects }) => {
         </StyledBottomIntroContainer>
       </section>
 
-      <section id="skills-section" className="flex-item flex-column">
+      <StyledSkillsSection
+        id="skills-section"
+        className="flex-item flex-column"
+      >
         <h2 className="base-text">Some of my skills</h2>
         <Skills />
-      </section>
+      </StyledSkillsSection>
 
       <section id="recent-projects" className="container flex-item flex-column">
         <h2 id="recent-projects-heading" className="base-text">
