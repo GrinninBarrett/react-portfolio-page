@@ -321,13 +321,13 @@ textarea:focus {
   background-color: var(--medium-green-accent);
 } */
 
-.input-item {
+/* .input-item {
   width: 100%;
   margin-top: 2em;
   padding: 8px 0 8px 8px;
   font-size: 1em;
   font-family: 'Quicksand', sans-serif;
-}
+} */
 
 .button {
   text-align: center;

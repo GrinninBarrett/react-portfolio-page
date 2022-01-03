@@ -113,6 +113,10 @@ const Contact = () => {
     border-radius: 5px;
     box-shadow: 0 1px 3px var(--medium-gray);
     transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 2em;
+    padding: 8px 0 8px 8px;
+    font-size: 1em;
 
     &:focus {
       outline: none;
@@ -127,6 +131,10 @@ const Contact = () => {
     box-shadow: 0 1px 3px var(--medium-gray);
     transition: all 0.3s ease;
     height: 100px;
+    width: 100%;
+    margin-top: 2em;
+    padding: 8px 0 8px 8px;
+    font-size: 1em;
 
     &:focus {
       outline: none;
@@ -148,7 +156,7 @@ const Contact = () => {
             // onBlur={handleNotify}
             type="text"
             placeholder="Name"
-            className="input-item"
+            className="input-item quicksand"
             required
           />
           <StyledInput
@@ -158,7 +166,7 @@ const Contact = () => {
             // onBlur={handleNotify}
             type="text"
             placeholder="Email address"
-            className="input-item"
+            className="input-item quicksand"
             required
           />
           <StyledTextArea
@@ -168,14 +176,14 @@ const Contact = () => {
             // onBlur={handleNotify}
             type="text"
             placeholder="Enter your message here"
-            className="input-item"
+            className="input-item quicksand"
             required
           />
           <button
             type="submit"
             onMouseDown={preventBlur}
             onClick={handleFormSubmit}
-            className="input-item button"
+            className="input-item button quicksand"
           >
             Send Message
           </button>
