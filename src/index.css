@@ -62,7 +62,7 @@ h5 {
   margin-bottom: 4rem;
 } */
 
-input,
+/* input,
 textarea {
   border: none;
   border-radius: 5px;
@@ -79,7 +79,7 @@ textarea:focus {
   outline: none;
   border: none;
   box-shadow: 0 5px 10px var(--medium-gray);
-}
+} */
 
 footer {
   background-color: var(--green-accent);

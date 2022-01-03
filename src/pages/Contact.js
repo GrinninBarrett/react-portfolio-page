@@ -86,6 +86,8 @@ const Contact = () => {
     }
   };
 
+  // Styled Components
+
   const StyledEmail = styled.a`
     color: var(--green-accent);
     &:hover {
@@ -102,12 +104,39 @@ const Contact = () => {
     }
   `;
 
+  const StyledInput = styled.input`
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px var(--medium-gray);
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: 0 5px 10px var(--medium-gray);
+    }
+  `;
+
+  const StyledTextArea = styled.textarea`
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px var(--medium-gray);
+    transition: all 0.3s ease;
+    height: 100px;
+
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: 0 5px 10px var(--medium-gray);
+    }
+  `;
+
   return (
     <main className="content-container">
       <div className="container flex-item flex-column">
         <h2 className="base-text">Get in Touch!</h2>
         <StyledForm className="flex-item flex-column">
-          <input
+          <StyledInput
             id="name"
             value={name}
             name="name"
@@ -118,7 +147,7 @@ const Contact = () => {
             className="input-item"
             required
           />
-          <input
+          <StyledInput
             value={email}
             name="email"
             onChange={handleInputChange}
@@ -128,7 +157,7 @@ const Contact = () => {
             className="input-item"
             required
           />
-          <textarea
+          <StyledTextArea
             value={message}
             name="message"
             onChange={handleInputChange}
