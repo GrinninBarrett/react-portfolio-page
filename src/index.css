@@ -218,10 +218,10 @@ textarea:focus {
   margin-left: 75px;
 } */
 
-.intro {
+/* .intro {
   justify-content: space-evenly;
   margin: 4em auto;
-}
+} */
 
 .top-intro-container {
   width: 85%;
@@ -430,10 +430,10 @@ textarea:focus {
     width: 85%;
   }
 
-  .intro {
+  /* .intro {
     height: auto;
     margin: 2em auto;
-  }
+  } */
 
   .top-intro-container {
     flex-direction: column;

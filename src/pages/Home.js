@@ -6,6 +6,18 @@ import Skills from '../components/Skills';
 import ProjectCard from '../components/ProjectCard';
 
 const Home = ({ featuredProjects }) => {
+  // Styled Components
+
+  const StyledMainIntro = styled.section`
+    justify-content: space-evenly;
+    margin: 4em auto;
+
+    @media screen and (max-width: 768px) {
+      height: auto;
+      margin: 2em auto;
+    }
+  `;
+
   const StyledHeadingContainer = styled.div`
     @media screen and (max-width: 768px) {
       text-align: center;
@@ -36,7 +48,7 @@ const Home = ({ featuredProjects }) => {
 
   const StyledSkillsSection = styled.section`
     background-color: rgb(244, 245, 244);
-    margin: 2rem 0;
+    margin: 4rem 0;
     padding: 0 0 2rem 0;
   `;
 
@@ -52,7 +64,10 @@ const Home = ({ featuredProjects }) => {
 
   return (
     <main>
-      <section id="intro" className="intro container flex-item flex-column">
+      <StyledMainIntro
+        id="intro"
+        className="intro container flex-item flex-column"
+      >
         <div className="top-intro-container flex-item">
           <StyledHeadingContainer id="heading-container">
             <h1 className="base-text">Hey! I'm Tucker Barrett.</h1>
@@ -98,7 +113,7 @@ const Home = ({ featuredProjects }) => {
             </a>
           </StyledLandingLinksContainer>
         </StyledBottomIntroContainer>
-      </section>
+      </StyledMainIntro>
 
       <StyledSkillsSection
         id="skills-section"

@@ -3,14 +3,22 @@ import styled from 'styled-components';
 import Skills from '../components/Skills';
 
 const About = () => {
-  const StyledSkillsSection = styled.section`
-    background-color: rgb(244, 245, 244);
-    margin: 2rem 0;
-    padding: 0 0 2rem 0;
-  `;
+  // Styled Components
 
   const StyledAboutIntro = styled.section`
-    margin-bottom: 6rem;
+    justify-content: space-evenly;
+    margin: 4em auto;
+
+    @media screen and (max-width: 768px) {
+      height: auto;
+      margin: 2em auto;
+    }
+  `;
+
+  const StyledSkillsSection = styled.section`
+    background-color: rgb(244, 245, 244);
+    margin: 4rem 0;
+    padding: 0 0 2rem 0;
   `;
 
   const StyledAboutTextContainer = styled.div`
