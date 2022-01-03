@@ -99,9 +99,9 @@ footer {
   color: var(--green-accent);
 } */
 
-#description {
+/* #description {
   font-size: 1.5em;
-}
+} */
 
 #slogan {
   font-size: 1.2em;
@@ -375,9 +375,9 @@ footer {
     width: 80%;
   }
 
-  #description {
+  /* #description {
     font-size: 1.2em;
-  }
+  } */
 
   .top-intro-container {
     width: 100%;
@@ -398,7 +398,7 @@ footer {
     padding: 35px 0 10px 0;
   }
 
-  #nav-links {
+  /* #nav-links {
     background-color: var(--background);
     display: none;
     position: absolute;
@@ -408,7 +408,7 @@ footer {
     width: 100vw;
     margin-top: 5em;
     z-index: 2;
-  }
+  } */
 
   /* #heading-container {
     text-align: center;

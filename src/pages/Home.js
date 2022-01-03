@@ -13,15 +13,26 @@ const Home = ({ featuredProjects }) => {
     }
   `;
 
+  const StyledSelfDescription = styled.p`
+    font-size: 1.5em;
+
+    @media screen and (max-width: 992px) {
+      font-size: 1.2em;
+    }
+  `;
+
   return (
     <main>
       <section id="intro" className="intro container flex-item flex-column">
         <div className="top-intro-container flex-item">
           <StyledHeadingContainer id="heading-container">
             <h1 className="base-text">Hey! I'm Tucker Barrett.</h1>
-            <p id="description" className="base-text quicksand">
+            <StyledSelfDescription
+              id="description"
+              className="base-text quicksand"
+            >
               A full stack web developer
-            </p>
+            </StyledSelfDescription>
           </StyledHeadingContainer>
           <picture className="tucker-photo-container">
             <source srcSet="https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1633134190/Portfolio%20Images/tucker-photo_rlk93d.webp" />
