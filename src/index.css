@@ -126,14 +126,14 @@ footer {
   color: var(--red-accent);
 } */
 
-#footer-nav {
+/* #footer-nav {
   justify-content: space-between;
-}
+} */
 
-#left-footer-link-container {
+/* #left-footer-link-container {
   width: 40%;
   justify-content: space-between;
-}
+} */
 
 #copyright {
   text-align: center;
@@ -418,9 +418,9 @@ footer {
     text-align: center;
   } */
 
-  #footer-nav {
+  /* #footer-nav {
     margin-bottom: 25px;
-  }
+  } */
 
   #footer-social-links {
     margin-top: 25px;

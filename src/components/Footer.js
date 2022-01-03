@@ -1,15 +1,29 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
+  const StyledFooterNav = styled.nav`
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 25px;
+    }
+  `;
+
+  const StyledLeftFooterLinkContainer = styled.div`
+    width: 40%;
+    justify-content: space-between;
+  `;
+
   return (
     <footer>
       <div className="container">
-        <nav
+        <StyledFooterNav
           id="footer-nav"
           className="nav-links-container flex-item footer-flex"
         >
-          <div
+          <StyledLeftFooterLinkContainer
             id="left-footer-link-container"
             className="flex-item footer-flex"
           >
@@ -23,8 +37,8 @@ const Footer = () => {
                   exact
                   to="/"
                   activeStyle={{
-                    backgroundColor: "rgb(238, 238, 238)",
-                    color: "#47684a",
+                    backgroundColor: 'rgb(238, 238, 238)',
+                    color: '#47684a',
                   }}
                 >
                   Home
@@ -34,8 +48,8 @@ const Footer = () => {
                   exact
                   to="/about"
                   activeStyle={{
-                    backgroundColor: "rgb(238, 238, 238)",
-                    color: "#47684a",
+                    backgroundColor: 'rgb(238, 238, 238)',
+                    color: '#47684a',
                   }}
                 >
                   About
@@ -45,8 +59,8 @@ const Footer = () => {
                   exact
                   to="/projects"
                   activeStyle={{
-                    backgroundColor: "rgb(238, 238, 238)",
-                    color: "#47684a",
+                    backgroundColor: 'rgb(238, 238, 238)',
+                    color: '#47684a',
                   }}
                 >
                   Projects
@@ -56,15 +70,15 @@ const Footer = () => {
                   exact
                   to="/contact"
                   activeStyle={{
-                    backgroundColor: "rgb(238, 238, 238)",
-                    color: "#47684a",
+                    backgroundColor: 'rgb(238, 238, 238)',
+                    color: '#47684a',
                   }}
                 >
                   Contact
                 </NavLink>
               </div>
             </div>
-          </div>
+          </StyledLeftFooterLinkContainer>
           <div id="footer-social-links">
             <a
               className="social-link footer-link link light-text"
@@ -121,7 +135,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-        </nav>
+        </StyledFooterNav>
         <div id="copyright">
           <p>
             <a
