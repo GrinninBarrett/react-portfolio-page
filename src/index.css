@@ -214,9 +214,9 @@ textarea:focus {
   flex-direction: column;
 }
 
-.main-nav-item {
+/* .main-nav-item {
   margin-left: 75px;
-}
+} */
 
 .intro {
   justify-content: space-evenly;
@@ -469,9 +469,9 @@ textarea:focus {
     margin: 4rem 0;
   }
 
-  .main-nav-item {
+  /* .main-nav-item {
     margin: 2em 0;
-  }
+  } */
 
   .footer-nav-item {
     margin: 0.4em 0;

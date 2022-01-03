@@ -29,6 +29,14 @@ const Header = () => {
     }
   `;
 
+  const StyledMainNavItem = styled(NavLink)`
+    margin-left: 75px;
+
+    @media screen and (max-width: 768px) {
+      margin: 2em 0;
+    }
+  `;
+
   return (
     <header>
       <div className="container">
@@ -38,7 +46,7 @@ const Header = () => {
           </StyledLogo>
           <StyledNavLinksContainer id="nav-links">
             <div id="nav-menu" className="flex-item nav-list">
-              <NavLink
+              <StyledMainNavItem
                 className="main-nav-item nav-item link green-link base-text"
                 exact
                 to="/"
@@ -48,8 +56,8 @@ const Header = () => {
                 }}
               >
                 Home
-              </NavLink>
-              <NavLink
+              </StyledMainNavItem>
+              <StyledMainNavItem
                 className="main-nav-item nav-item link green-link base-text"
                 exact
                 to="/about"
@@ -59,8 +67,8 @@ const Header = () => {
                 }}
               >
                 About
-              </NavLink>
-              <NavLink
+              </StyledMainNavItem>
+              <StyledMainNavItem
                 className="main-nav-item nav-item link green-link base-text"
                 exact
                 to="/projects"
@@ -70,8 +78,8 @@ const Header = () => {
                 }}
               >
                 Projects
-              </NavLink>
-              <NavLink
+              </StyledMainNavItem>
+              <StyledMainNavItem
                 className="main-nav-item nav-item link green-link base-text"
                 exact
                 to="/contact"
@@ -81,7 +89,7 @@ const Header = () => {
                 }}
               >
                 Contact
-              </NavLink>
+              </StyledMainNavItem>
             </div>
           </StyledNavLinksContainer>
         </StyledNav>
