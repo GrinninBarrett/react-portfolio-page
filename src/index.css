@@ -147,6 +147,8 @@ textarea:focus {
   width: 50%;
 } */
 
+/* Utility Classes */
+
 .container {
   max-width: 85%;
   margin: auto;
@@ -223,10 +225,10 @@ textarea:focus {
   margin: 4em auto;
 } */
 
-.top-intro-container {
+/* .top-intro-container {
   width: 85%;
   justify-content: space-between;
-}
+} */
 
 .tucker-photo {
   height: 350px;
@@ -370,9 +372,9 @@ textarea:focus {
     font-size: 1.2em;
   } */
 
-  .top-intro-container {
+  /* .top-intro-container {
     width: 100%;
-  }
+  } */
 
   .tucker-photo {
     height: 300px;
@@ -435,9 +437,9 @@ textarea:focus {
     margin: 2em auto;
   } */
 
-  .top-intro-container {
+  /* .top-intro-container {
     flex-direction: column;
-  }
+  } */
 
   .footer-flex {
     flex-direction: column;

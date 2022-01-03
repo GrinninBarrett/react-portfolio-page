@@ -15,6 +15,19 @@ const About = () => {
     }
   `;
 
+  const StyledTopIntroContainer = styled.div`
+    width: 85%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  `;
+
   const StyledSkillsSection = styled.section`
     background-color: rgb(244, 245, 244);
     margin: 4rem 0;
@@ -32,7 +45,7 @@ const About = () => {
   return (
     <main className="content-container">
       <StyledAboutIntro id="about-intro" className="intro container flex-item">
-        <div className="top-intro-container flex-item">
+        <StyledTopIntroContainer className="top-intro-container flex-item">
           <picture>
             <source srcSet="https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_625,q_auto/v1633135163/Portfolio%20Images/tucker-photo-3_a2ngp1.webp" />
             <img
@@ -60,7 +73,7 @@ const About = () => {
               plan to contribute.
             </p>
           </StyledAboutTextContainer>
-        </div>
+        </StyledTopIntroContainer>
       </StyledAboutIntro>
 
       <StyledSkillsSection

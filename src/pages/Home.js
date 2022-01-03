@@ -18,6 +18,19 @@ const Home = ({ featuredProjects }) => {
     }
   `;
 
+  const StyledTopIntroContainer = styled.div`
+    width: 85%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  `;
+
   const StyledHeadingContainer = styled.div`
     @media screen and (max-width: 768px) {
       text-align: center;
@@ -46,12 +59,6 @@ const Home = ({ featuredProjects }) => {
     }
   `;
 
-  const StyledSkillsSection = styled.section`
-    background-color: rgb(244, 245, 244);
-    margin: 4rem 0;
-    padding: 0 0 2rem 0;
-  `;
-
   const StyledLandingLinksContainer = styled.div`
     width: 100%;
     margin-top: 2rem;
@@ -62,13 +69,19 @@ const Home = ({ featuredProjects }) => {
     }
   `;
 
+  const StyledSkillsSection = styled.section`
+    background-color: rgb(244, 245, 244);
+    margin: 4rem 0;
+    padding: 0 0 2rem 0;
+  `;
+
   return (
     <main>
       <StyledMainIntro
         id="intro"
         className="intro container flex-item flex-column"
       >
-        <div className="top-intro-container flex-item">
+        <StyledTopIntroContainer className="top-intro-container flex-item">
           <StyledHeadingContainer id="heading-container">
             <h1 className="base-text">Hey! I'm Tucker Barrett.</h1>
             <StyledSelfDescription
@@ -86,7 +99,7 @@ const Home = ({ featuredProjects }) => {
               alt="Tucker Barrett, smiling while on a hike in Korea"
             />
           </picture>
-        </div>
+        </StyledTopIntroContainer>
         <StyledBottomIntroContainer
           id="bottom-intro-container"
           className="flex-item flex-column"
