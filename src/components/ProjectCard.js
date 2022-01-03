@@ -42,6 +42,15 @@ const ProjectCard = (props) => {
     margin: 0 1rem;
   `;
 
+  const StyledProjectLink = styled.a`
+    background-color: var(--red-accent);
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: var(--green-accent);
+    }
+  `;
+
   return (
     <StyledProjectCard className="project-card">
       <picture>
@@ -62,25 +71,26 @@ const ProjectCard = (props) => {
         <StyledCardContentContainer className="green-text card-content">
           {props.tech}
         </StyledCardContentContainer>
-        <a
+        <StyledProjectLink
           className="link light-text project-link"
           href={props.gitHub}
           target="_blank"
           rel="noreferrer"
         >
           View on GitHub
-        </a>
+        </StyledProjectLink>
+        {/* Done this way to avoid users going to the undeployed app (because it looks like Google, when deployed, users receive a warning that it is unsafe) */}
         {props.name === 'Google Homepage Recreation' ? (
-          <div className="link light-text project-link">See Live App</div>
+          ''
         ) : (
-          <a
+          <StyledProjectLink
             className="link light-text project-link"
             href={props.live}
             target="_blank"
             rel="noreferrer"
           >
             See Live App
-          </a>
+          </StyledProjectLink>
         )}
       </StyledProjectInfo>
     </StyledProjectCard>
