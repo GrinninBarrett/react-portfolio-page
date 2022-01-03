@@ -46,9 +46,31 @@ const About = () => {
     }
   `;
 
-  const StyledBottomOfPageLink = styled.section`
+  const StyledBottomOfPageLinkContainer = styled.section`
     width: 50%;
     margin: 6rem auto;
+  `;
+
+  const StyledBottomOfPageLink = styled.a`
+    background-color: var(--green-accent);
+    color: var(--background);
+    padding: 8px 0;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+
+    &:hover {
+      background-color: var(--medium-green-accent);
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 1rem auto;
+      width: 100%;
+    }
   `;
 
   return (
@@ -93,16 +115,16 @@ const About = () => {
         <Skills />
       </StyledSkillsSection>
 
-      <StyledBottomOfPageLink className="container flex-item flex-column bottom-of-page-link">
-        <a
+      <StyledBottomOfPageLinkContainer className="container flex-item flex-column bottom-of-page-link">
+        <StyledBottomOfPageLink
           id="resume"
           className="see-more-link link resume-link base-text quicksand"
           href="./assets/resume/CTB-Resume.pdf"
           download="CTB-Resume.pdf"
         >
           Download My Resume
-        </a>
-      </StyledBottomOfPageLink>
+        </StyledBottomOfPageLink>
+      </StyledBottomOfPageLinkContainer>
     </StyledMain>
   );
 };

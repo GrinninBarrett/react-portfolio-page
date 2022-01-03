@@ -304,7 +304,7 @@ textarea:focus {
   width: 50%;
 } */
 
-.see-more-link {
+/* .see-more-link {
   background-color: var(--green-accent);
   color: var(--background);
   padding: 8px 0;
@@ -315,11 +315,11 @@ textarea:focus {
   -o-border-radius: 20px;
   width: 30%;
   text-align: center;
-}
+} */
 
-.see-more-link:hover {
+/* .see-more-link:hover {
   background-color: var(--medium-green-accent);
-}
+} */
 
 .input-item {
   width: 100%;
@@ -461,10 +461,10 @@ textarea:focus {
     flex-direction: column;
   } */
 
-  .see-more-link {
+  /* .see-more-link {
     margin: 1rem auto;
     width: 60%;
-  }
+  } */
 
   /* .all-projects-link-container {
     width: 100%;

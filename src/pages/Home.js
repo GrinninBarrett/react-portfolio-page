@@ -84,18 +84,31 @@ const Home = ({ featuredProjects }) => {
     justify-content: center;
   `;
 
-  const StyledAllProjectsLinkContainer = styled.div`
+  const StyledBottomOfPageLinkContainer = styled.section`
     width: 50%;
-
-    @media screen and (max-width: 768px) {
-      width: 100%;
-      margin: 4rem 0;
-    }
+    margin: 6rem auto;
   `;
 
   const StyledBottomOfPageLink = styled(Link)`
-    width: 50%;
-    margin: 6rem auto;
+    background-color: var(--green-accent);
+    color: var(--background);
+    padding: 8px 0;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+
+    &:hover {
+      background-color: var(--medium-green-accent);
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 1rem auto;
+      width: 100%;
+    }
   `;
 
   return (
@@ -182,14 +195,14 @@ const Home = ({ featuredProjects }) => {
             />
           ))}
         </StyledProjectCardsContainer>
-        <StyledAllProjectsLinkContainer className="all-projects-link-container flex-item">
+        <StyledBottomOfPageLinkContainer className="container flex-item flex-column bottom-of-page-link">
           <StyledBottomOfPageLink
             className="see-more-link link base-text quicksand bottom-of-page-link"
             to="/projects"
           >
             See All Projects
           </StyledBottomOfPageLink>
-        </StyledAllProjectsLinkContainer>
+        </StyledBottomOfPageLinkContainer>
       </section>
     </StyledMain>
   );
