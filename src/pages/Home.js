@@ -40,6 +40,16 @@ const Home = ({ featuredProjects }) => {
     padding: 0 0 2rem 0;
   `;
 
+  const StyledLandingLinksContainer = styled.div`
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  `;
+
   return (
     <main>
       <section id="intro" className="intro container flex-item flex-column">
@@ -70,7 +80,7 @@ const Home = ({ featuredProjects }) => {
             Pursuing my passion for building responsive, accessible web sites
             and applications
           </StyledSlogan>
-          <div className="flex-item landing-links">
+          <StyledLandingLinksContainer className="flex-item landing-links">
             <Link
               id="learn-more"
               className="link see-more-link base-text quicksand"
@@ -86,7 +96,7 @@ const Home = ({ featuredProjects }) => {
             >
               Download My Resume
             </a>
-          </div>
+          </StyledLandingLinksContainer>
         </StyledBottomIntroContainer>
       </section>
 

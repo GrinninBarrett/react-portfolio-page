@@ -187,11 +187,11 @@ textarea:focus {
   border-radius: 15px;
 }
 
-.landing-links {
+/* .landing-links {
   width: 100%;
   margin-top: 2rem;
   justify-content: space-evenly;
-}
+} */
 
 /* Style all links with green hover effect */
 .green-link:hover {
@@ -455,9 +455,9 @@ textarea:focus {
     width: 100%;
   }
 
-  .landing-links {
+  /* .landing-links {
     flex-direction: column;
-  }
+  } */
 
   .see-more-link {
     margin: 1rem auto;
