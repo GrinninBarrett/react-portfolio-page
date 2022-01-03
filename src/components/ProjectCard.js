@@ -37,6 +37,11 @@ const ProjectCard = (props) => {
     height: 100%;
   `;
 
+  const StyledCardContentContainer = styled.p`
+    text-align: center;
+    margin: 0 1rem;
+  `;
+
   return (
     <StyledProjectCard className="project-card">
       <picture>
@@ -51,8 +56,12 @@ const ProjectCard = (props) => {
       </picture>
       <StyledProjectInfo className="project-info flex-item flex-column">
         <h3 className="base-text">{props.name}</h3>
-        <p className="green-text quicksand card-content">{props.description}</p>
-        <p className="green-text card-content">{props.tech}</p>
+        <StyledCardContentContainer className="green-text quicksand card-content">
+          {props.description}
+        </StyledCardContentContainer>
+        <StyledCardContentContainer className="green-text card-content">
+          {props.tech}
+        </StyledCardContentContainer>
         <a
           className="link light-text project-link"
           href={props.gitHub}

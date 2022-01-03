@@ -277,10 +277,10 @@ textarea:focus {
   opacity: 0.95;
 } */
 
-.card-content {
+/* .card-content {
   text-align: center;
   margin: 0 1rem;
-}
+} */
 
 .project-link {
   background-color: var(--red-accent);
