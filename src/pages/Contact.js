@@ -169,6 +169,12 @@ const Contact = () => {
     }
   `;
 
+  const StyledContactByEmail = styled.h3`
+    @media screen and (max-height: 750px) {
+      margin-bottom: 4em;
+    }
+  `;
+
   return (
     <StyledMain>
       <div className="container flex-item flex-column">
@@ -217,7 +223,7 @@ const Contact = () => {
         </StyledForm>
       </div>
       <div class="container flex-item flex-column">
-        <h3 className="base-text center">
+        <StyledContactByEmail className="base-text center">
           You can also send an email anytime at{' '}
           <StyledEmail
             href="mailto:ctbarrett.tech@gmail.com"
@@ -228,7 +234,7 @@ const Contact = () => {
             ctbarrett.tech@gmail.com
           </StyledEmail>
           !
-        </h3>
+        </StyledContactByEmail>
       </div>
     </StyledMain>
   );
