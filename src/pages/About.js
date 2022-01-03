@@ -13,6 +13,14 @@ const About = () => {
     margin-bottom: 6rem;
   `;
 
+  const StyledAboutTextContainer = styled.div`
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  `;
+
   return (
     <main className="content-container">
       <StyledAboutIntro id="about-intro" className="intro container flex-item">
@@ -25,7 +33,10 @@ const About = () => {
               alt="Tucker wearing a cat sweatshirt and cat blazer"
             />
           </picture>
-          <div id="about-text-container" className="flex-item flex-column">
+          <StyledAboutTextContainer
+            id="about-text-container"
+            className="flex-item flex-column"
+          >
             <h1 className="base-text">A bit about me</h1>
             <p className="base-text">
               My background is education - I have taught music for 4 years, with
@@ -40,7 +51,7 @@ const About = () => {
               Now, rather than simply benefiting from advances in technology, I
               plan to contribute.
             </p>
-          </div>
+          </StyledAboutTextContainer>
         </div>
       </StyledAboutIntro>
 

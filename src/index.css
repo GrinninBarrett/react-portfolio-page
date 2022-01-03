@@ -143,9 +143,9 @@ footer {
   margin-bottom: 6rem;
 } */
 
-#about-text-container {
+/* #about-text-container {
   width: 50%;
-}
+} */
 
 .container {
   max-width: 85%;
@@ -410,9 +410,9 @@ footer {
     padding-left: 3em;
   }
 
-  #about-text-container {
+  /* #about-text-container {
     width: 100%;
-  }
+  } */
 
   /* #bottom-intro-container {
     text-align: center;
