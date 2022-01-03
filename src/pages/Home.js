@@ -7,8 +7,10 @@ import ProjectCard from '../components/ProjectCard';
 
 const Home = ({ featuredProjects }) => {
   const StyledHeadingContainer = styled.div`
-    text-align: center;
-    margin-top: 0;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      margin-top: 0;
+    }
   `;
 
   return (
