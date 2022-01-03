@@ -1,11 +1,47 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
 
 const ProjectCard = (props) => {
+  // Styled Components
+
+  const StyledProjectCard = styled.article`
+    position: relative;
+    margin: 0.5em;
+    border: 3px solid var(--green-accent);
+    height: 350px;
+    width: 350px;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:hover .project-info {
+      opacity: 0.95;
+    }
+  `;
+
+  const StyledProjectInfo = styled.div`
+    justify-content: space-evenly;
+    background-color: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  `;
+
+  const StyledProjectImage = styled.img`
+    height: 100%;
+  `;
+
   return (
-    <article className="project-card">
+    <StyledProjectCard className="project-card">
       <picture>
         <source srcSet={props.srcSet} type="image/webp" />
-        <img
+        <StyledProjectImage
           className="project-image"
           height="350px"
           width="350px"
@@ -13,7 +49,7 @@ const ProjectCard = (props) => {
           alt={props.alt}
         />
       </picture>
-      <div className="project-info flex-item flex-column">
+      <StyledProjectInfo className="project-info flex-item flex-column">
         <h3 className="base-text">{props.name}</h3>
         <p className="green-text quicksand card-content">{props.description}</p>
         <p className="green-text card-content">{props.tech}</p>
@@ -25,12 +61,8 @@ const ProjectCard = (props) => {
         >
           View on GitHub
         </a>
-        {props.name === "Google Homepage Recreation" ? (
-          <div
-            className="link light-text project-link"
-          >
-            See Live App
-          </div>
+        {props.name === 'Google Homepage Recreation' ? (
+          <div className="link light-text project-link">See Live App</div>
         ) : (
           <a
             className="link light-text project-link"
@@ -41,8 +73,8 @@ const ProjectCard = (props) => {
             See Live App
           </a>
         )}
-      </div>
-    </article>
+      </StyledProjectInfo>
+    </StyledProjectCard>
   );
 };
 

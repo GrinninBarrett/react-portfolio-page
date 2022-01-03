@@ -244,7 +244,7 @@ textarea:focus {
   justify-content: center;
 } */
 
-.project-card {
+/* .project-card {
   position: relative;
   margin: 0.5em;
   border: 3px solid var(--green-accent);
@@ -255,13 +255,13 @@ textarea:focus {
 
 .project-card:hover {
   transform: scale(1.1);
-}
+} */
 
-.project-image {
+/* .project-image {
   height: 100%;
-}
+} */
 
-.project-info {
+/* .project-info {
   justify-content: space-evenly;
   background-color: var(--background);
   position: absolute;
@@ -271,11 +271,11 @@ textarea:focus {
   width: 100%;
   opacity: 0;
   transition: all 0.5s ease;
-}
+} */
 
-.project-card:hover .project-info {
+/* .project-card:hover .project-info {
   opacity: 0.95;
-}
+} */
 
 .card-content {
   text-align: center;
