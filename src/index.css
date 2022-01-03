@@ -329,7 +329,7 @@ textarea:focus {
   font-family: 'Quicksand', sans-serif;
 } */
 
-.button {
+/* .button {
   text-align: center;
   width: 30%;
   padding: 5px 0;
@@ -343,7 +343,7 @@ textarea:focus {
 .button:hover {
   cursor: pointer;
   box-shadow: 0 5px 10px var(--medium-gray);
-}
+} */
 
 .footer-nav-item {
   margin: 0 10px;
@@ -381,9 +381,9 @@ textarea:focus {
     width: 300px;
   } */
 
-  .button {
+  /* .button {
     width: 50%;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -453,9 +453,9 @@ textarea:focus {
     padding: 0;
   } */
 
-  .button {
+  /* .button {
     width: 100%;
-  }
+  } */
 
   /* .landing-links {
     flex-direction: column;

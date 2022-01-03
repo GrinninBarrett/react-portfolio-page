@@ -143,6 +143,32 @@ const Contact = () => {
     }
   `;
 
+  const StyledButton = styled.button`
+    text-align: center;
+    font-size: 1em;
+    width: 30%;
+    margin-top: 2em;
+    padding: 8px 0;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--green-accent);
+    color: var(--light-text);
+    transition: all 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 5px 10px var(--medium-gray);
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  `;
+
   return (
     <StyledMain>
       <div className="container flex-item flex-column">
@@ -179,14 +205,14 @@ const Contact = () => {
             className="input-item quicksand"
             required
           />
-          <button
+          <StyledButton
             type="submit"
             onMouseDown={preventBlur}
             onClick={handleFormSubmit}
             className="input-item button quicksand"
           >
             Send Message
-          </button>
+          </StyledButton>
           <ToastContainer pauseOnFocusLoss={false} pauseOnHover={false} />
         </StyledForm>
       </div>
