@@ -21,6 +21,19 @@ const Home = ({ featuredProjects }) => {
     }
   `;
 
+  const StyledSlogan = styled.p`
+    font-size: 1.2em;
+  `;
+
+  const StyledBottomIntroContainer = styled.div`
+    justify-content: center;
+    margin-top: 4em;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  `;
+
   return (
     <main>
       <section id="intro" className="intro container flex-item flex-column">
@@ -43,11 +56,14 @@ const Home = ({ featuredProjects }) => {
             />
           </picture>
         </div>
-        <div id="bottom-intro-container" className="flex-item flex-column">
-          <p id="slogan" className="base-text">
+        <StyledBottomIntroContainer
+          id="bottom-intro-container"
+          className="flex-item flex-column"
+        >
+          <StyledSlogan id="slogan" className="base-text">
             Pursuing my passion for building responsive, accessible web sites
             and applications
-          </p>
+          </StyledSlogan>
           <div className="flex-item landing-links">
             <Link
               id="learn-more"
@@ -65,7 +81,7 @@ const Home = ({ featuredProjects }) => {
               Download My Resume
             </a>
           </div>
-        </div>
+        </StyledBottomIntroContainer>
       </section>
 
       <section id="skills-section" className="flex-item flex-column">

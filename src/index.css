@@ -103,14 +103,14 @@ footer {
   font-size: 1.5em;
 } */
 
-#slogan {
+/* #slogan {
   font-size: 1.2em;
-}
+} */
 
-#bottom-intro-container {
+/* #bottom-intro-container {
   justify-content: center;
   margin-top: 4em;
-}
+} */
 
 #skills-section {
   background-color: rgb(244, 245, 244);
@@ -423,9 +423,9 @@ footer {
     width: 100%;
   }
 
-  #bottom-intro-container {
+  /* #bottom-intro-container {
     text-align: center;
-  }
+  } */
 
   #footer-nav {
     margin-bottom: 25px;
