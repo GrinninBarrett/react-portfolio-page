@@ -39,9 +39,9 @@ const Contact = () => {
   };
 
   // This prevents the blur event, which causes multiple notifications
-  const preventBlur = (event) => {
-    event.preventDefault();
-  };
+  // const preventBlur = (event) => {
+  //   event.preventDefault();
+  // };
 
   // const handleNotify = (event) => {
   //   const { target } = event;
@@ -213,7 +213,7 @@ const Contact = () => {
           />
           <StyledButton
             type="submit"
-            onMouseDown={preventBlur}
+            // onMouseDown={preventBlur}
             onClick={handleFormSubmit}
             className="input-item button quicksand"
           >
@@ -224,8 +224,9 @@ const Contact = () => {
       </div>
       <div class="container flex-item flex-column">
         <StyledContactByEmail className="base-text center">
-          Currently, this form will not actually send me anything, so you can
-          also send an email anytime at{' '}
+          This form is still under development, so currently it will not send me
+          anything. <br></br> <br></br> You can get in touch anytime by sending
+          me an email at{' '}
           <StyledEmail
             href="mailto:ctbarrett.tech@gmail.com"
             rel="noreferrer"
