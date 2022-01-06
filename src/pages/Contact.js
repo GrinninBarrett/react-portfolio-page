@@ -6,6 +6,95 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { validateEmail } from '../utils/helpers';
 
+// Styled Components
+const StyledMain = styled.main`
+  min-height: 80vh;
+`;
+
+const StyledEmail = styled.a`
+  color: var(--green-accent);
+  &:hover {
+    color: var(--red-accent);
+  }
+`;
+
+const StyledForm = styled.form`
+  width: 50%;
+  margin-bottom: 4rem;
+
+  @media screen and (max-width: 992px) {
+    width: 80%;
+  }
+`;
+
+const StyledInput = styled.input`
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px var(--medium-gray);
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 2em;
+  padding: 8px 0 8px 8px;
+  font-size: 1em;
+
+  &:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 5px 10px var(--medium-gray);
+  }
+`;
+
+const StyledTextArea = styled.textarea`
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px var(--medium-gray);
+  transition: all 0.3s ease;
+  height: 100px;
+  width: 100%;
+  margin-top: 2em;
+  padding: 8px 0 8px 8px;
+  font-size: 1em;
+
+  &:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 5px 10px var(--medium-gray);
+  }
+`;
+
+const StyledButton = styled.button`
+  text-align: center;
+  font-size: 1em;
+  width: 30%;
+  margin-top: 2em;
+  padding: 8px 0;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--green-accent);
+  color: var(--light-text);
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px var(--medium-gray);
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const StyledContactByEmail = styled.h3`
+  @media screen and (max-height: 750px) {
+    margin-bottom: 4em;
+  }
+`;
+
+// Component function
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -39,9 +128,9 @@ const Contact = () => {
   };
 
   // This prevents the blur event, which causes multiple notifications
-  // const preventBlur = (event) => {
-  //   event.preventDefault();
-  // };
+  const preventBlur = (event) => {
+    event.preventDefault();
+  };
 
   // const handleNotify = (event) => {
   //   const { target } = event;
@@ -86,101 +175,13 @@ const Contact = () => {
     }
   };
 
-  // Styled Components
-
-  const StyledMain = styled.main`
-    min-height: 80vh;
-  `;
-
-  const StyledEmail = styled.a`
-    color: var(--green-accent);
-    &:hover {
-      color: var(--red-accent);
-    }
-  `;
-
-  const StyledForm = styled.form`
-    width: 50%;
-    margin-bottom: 4rem;
-
-    @media screen and (max-width: 992px) {
-      width: 80%;
-    }
-  `;
-
-  const StyledInput = styled.input`
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px var(--medium-gray);
-    transition: all 0.3s ease;
-    width: 100%;
-    margin-top: 2em;
-    padding: 8px 0 8px 8px;
-    font-size: 1em;
-
-    &:focus {
-      outline: none;
-      border: none;
-      box-shadow: 0 5px 10px var(--medium-gray);
-    }
-  `;
-
-  const StyledTextArea = styled.textarea`
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px var(--medium-gray);
-    transition: all 0.3s ease;
-    height: 100px;
-    width: 100%;
-    margin-top: 2em;
-    padding: 8px 0 8px 8px;
-    font-size: 1em;
-
-    &:focus {
-      outline: none;
-      border: none;
-      box-shadow: 0 5px 10px var(--medium-gray);
-    }
-  `;
-
-  const StyledButton = styled.button`
-    text-align: center;
-    font-size: 1em;
-    width: 30%;
-    margin-top: 2em;
-    padding: 8px 0;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--green-accent);
-    color: var(--light-text);
-    transition: all 0.3s ease;
-
-    &:hover {
-      cursor: pointer;
-      box-shadow: 0 5px 10px var(--medium-gray);
-    }
-
-    @media screen and (max-width: 992px) {
-      width: 50%;
-    }
-
-    @media screen and (max-width: 768px) {
-      width: 100%;
-    }
-  `;
-
-  const StyledContactByEmail = styled.h3`
-    @media screen and (max-height: 750px) {
-      margin-bottom: 4em;
-    }
-  `;
-
   return (
     <StyledMain>
       <div className="container flex-item flex-column">
         <h2 className="base-text">Get in Touch!</h2>
         <StyledForm className="flex-item flex-column">
           <StyledInput
+            key="name"
             id="name"
             value={name}
             name="name"
@@ -192,6 +193,7 @@ const Contact = () => {
             required
           />
           <StyledInput
+            key="email"
             value={email}
             name="email"
             onChange={handleInputChange}
@@ -202,6 +204,7 @@ const Contact = () => {
             required
           />
           <StyledTextArea
+            key="message"
             value={message}
             name="message"
             onChange={handleInputChange}
@@ -213,7 +216,7 @@ const Contact = () => {
           />
           <StyledButton
             type="submit"
-            // onMouseDown={preventBlur}
+            onMouseDown={preventBlur}
             onClick={handleFormSubmit}
             className="input-item button quicksand"
           >
