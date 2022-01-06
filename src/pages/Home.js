@@ -5,127 +5,126 @@ import Skills from '../components/Skills';
 
 import ProjectCard from '../components/ProjectCard';
 
-const Home = ({ featuredProjects }) => {
-  // Styled Components
+// Styled Components
+const StyledMain = styled.main`
+  min-height: 80vh;
+`;
 
-  const StyledMain = styled.main`
-    min-height: 80vh;
-  `;
+const StyledMainIntro = styled.section`
+  justify-content: space-evenly;
+  margin: 4em auto;
 
-  const StyledMainIntro = styled.section`
-    justify-content: space-evenly;
-    margin: 4em auto;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    margin: 2em auto;
+  }
+`;
 
-    @media screen and (max-width: 768px) {
-      height: auto;
-      margin: 2em auto;
-    }
-  `;
+const StyledTopIntroContainer = styled.div`
+  width: 85%;
+  justify-content: space-between;
 
-  const StyledTopIntroContainer = styled.div`
-    width: 85%;
-    justify-content: space-between;
-
-    @media screen and (max-width: 992px) {
-      width: 100%;
-    }
-
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-    }
-  `;
-
-  const StyledHeadingContainer = styled.div`
-    @media screen and (max-width: 768px) {
-      text-align: center;
-      margin-top: 0;
-    }
-  `;
-
-  const StyledTuckerPhoto = styled.img`
-    height: 350px;
-    width: 350px;
-
-    @media screen and (max-width: 992px) {
-      height: 300px;
-      width: 300px;
-    }
-
-    @media screen and (max-height: 750px) {
-      height: 300px;
-      width: 300px;
-    }
-  `;
-
-  const StyledSelfDescription = styled.p`
-    font-size: 1.5em;
-
-    @media screen and (max-width: 992px) {
-      font-size: 1.2em;
-    }
-  `;
-
-  const StyledSlogan = styled.p`
-    font-size: 1.2em;
-  `;
-
-  const StyledBottomIntroContainer = styled.div`
-    justify-content: center;
-    margin-top: 4em;
-
-    @media screen and (max-width: 768px) {
-      text-align: center;
-    }
-  `;
-
-  const StyledLandingLinksContainer = styled.div`
+  @media screen and (max-width: 992px) {
     width: 100%;
-    margin-top: 2rem;
-    justify-content: space-evenly;
+  }
 
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-    }
-  `;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
 
-  const StyledSkillsSection = styled.section`
-    background-color: rgb(244, 245, 244);
-    margin: 6rem 0 4rem 0;
-    padding: 0 0 2rem 0;
-  `;
-
-  const StyledProjectCardsContainer = styled.div`
-    flex-wrap: wrap;
-    justify-content: center;
-  `;
-
-  const StyledBottomOfPageLinkContainer = styled.section`
-    width: 50%;
-    margin: 6rem auto;
-  `;
-
-  const StyledBottomOfPageLink = styled(Link)`
-    background-color: var(--green-accent);
-    color: var(--background);
-    padding: 8px 0;
-    border-radius: 20px;
-    width: 30%;
+const StyledHeadingContainer = styled.div`
+  @media screen and (max-width: 768px) {
     text-align: center;
+    margin-top: 0;
+  }
+`;
 
-    &:hover {
-      background-color: var(--medium-green-accent);
-    }
+const StyledTuckerPhoto = styled.img`
+  height: 350px;
+  width: 350px;
 
-    @media screen and (max-width: 992px) {
-      width: 60%;
-    }
+  @media screen and (max-width: 992px) {
+    height: 300px;
+    width: 300px;
+  }
 
-    @media screen and (max-width: 768px) {
-      margin: 1rem auto;
-      width: 100%;
-    }
-  `;
+  @media screen and (max-height: 750px) {
+    height: 300px;
+    width: 300px;
+  }
+`;
 
+const StyledSelfDescription = styled.p`
+  font-size: 1.5em;
+
+  @media screen and (max-width: 992px) {
+    font-size: 1.2em;
+  }
+`;
+
+const StyledSlogan = styled.p`
+  font-size: 1.2em;
+`;
+
+const StyledBottomIntroContainer = styled.div`
+  justify-content: center;
+  margin-top: 4em;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
+const StyledLandingLinksContainer = styled.div`
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const StyledSkillsSection = styled.section`
+  background-color: rgb(244, 245, 244);
+  margin: 6rem 0 4rem 0;
+  padding: 0 0 2rem 0;
+`;
+
+const StyledProjectCardsContainer = styled.div`
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+const StyledBottomOfPageLinkContainer = styled.section`
+  width: 50%;
+  margin: 6rem auto;
+`;
+
+const StyledBottomOfPageLink = styled(Link)`
+  background-color: var(--green-accent);
+  color: var(--background);
+  padding: 8px 0;
+  border-radius: 20px;
+  width: 30%;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--medium-green-accent);
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 1rem auto;
+    width: 100%;
+  }
+`;
+
+const Home = ({ featuredProjects }) => {
   return (
     <StyledMain>
       <StyledMainIntro
