@@ -2,72 +2,73 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
+// Styled Components
+
+const StyledFooter = styled.footer`
+  background-color: var(--green-accent);
+  padding: 35px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 35px 0 10px 0;
+  }
+`;
+const StyledFooterNav = styled.nav`
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+`;
+
+const StyledFooterNavItem = styled(NavLink)`
+  margin: 0 10px;
+
+  @media screen and (max-width: 768px) {
+    margin: 0.4em 0;
+  }
+`;
+
+const StyledFooterLink = styled(Link)`
+  &:hover {
+    color: var(--light-green-accent);
+  }
+`;
+
+const StyledSocialLink = styled.a`
+  &:hover {
+    color: var(--light-red-accent);
+  }
+`;
+
+const StyledLeftFooterLinkContainer = styled.div`
+  width: 40%;
+  justify-content: space-between;
+`;
+
+const StyledCopyright = styled.div`
+  text-align: center;
+`;
+
+const StyledFooterSocialLinks = styled.div`
+  @media screen and (max-width: 768px) {
+    margin-top: 25px;
+  }
+`;
+
+const StyledNavList = styled.div`
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 0;
+  }
+`;
+
+// Component function
 const Footer = () => {
-  // Styled Components
-
-  const StyledFooter = styled.footer`
-    background-color: var(--green-accent);
-    padding: 35px 0;
-    position: relative;
-    bottom: 0;
-    left: 0;
-
-    @media screen and (max-width: 768px) {
-      padding: 35px 0 10px 0;
-    }
-  `;
-  const StyledFooterNav = styled.nav`
-    justify-content: space-between;
-
-    @media screen and (max-width: 768px) {
-      margin-bottom: 25px;
-    }
-  `;
-
-  const StyledFooterNavItem = styled(NavLink)`
-    margin: 0 10px;
-
-    @media screen and (max-width: 768px) {
-      margin: 0.4em 0;
-    }
-  `;
-
-  const StyledFooterLink = styled(Link)`
-    &:hover {
-      color: var(--light-green-accent);
-    }
-  `;
-
-  const StyledSocialLink = styled.a`
-    &:hover {
-      color: var(--light-red-accent);
-    }
-  `;
-
-  const StyledLeftFooterLinkContainer = styled.div`
-    width: 40%;
-    justify-content: space-between;
-  `;
-
-  const StyledCopyright = styled.div`
-    text-align: center;
-  `;
-
-  const StyledFooterSocialLinks = styled.div`
-    @media screen and (max-width: 768px) {
-      margin-top: 25px;
-    }
-  `;
-
-  const StyledNavList = styled.div`
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      justify-content: center;
-      margin-top: 1em;
-      padding: 0;
-    }
-  `;
-
   return (
     <StyledFooter>
       <div className="container">
