@@ -1,56 +1,56 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Styled Components
+const StyledProjectCard = styled.article`
+  position: relative;
+  margin: 0.5em;
+  border: 3px solid var(--green-accent);
+  height: 350px;
+  width: 350px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:hover .project-info {
+    opacity: 0.95;
+  }
+`;
+
+const StyledProjectInfo = styled.div`
+  justify-content: space-evenly;
+  background-color: var(--background);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+`;
+
+const StyledProjectImage = styled.img`
+  height: 100%;
+`;
+
+const StyledCardContentContainer = styled.p`
+  text-align: center;
+  margin: 0 1rem;
+`;
+
+const StyledProjectLink = styled.a`
+  background-color: var(--red-accent);
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: var(--green-accent);
+  }
+`;
+
+// Component function
 const ProjectCard = (props) => {
-  // Styled Components
-
-  const StyledProjectCard = styled.article`
-    position: relative;
-    margin: 0.5em;
-    border: 3px solid var(--green-accent);
-    height: 350px;
-    width: 350px;
-    transition: transform 0.5s ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    &:hover .project-info {
-      opacity: 0.95;
-    }
-  `;
-
-  const StyledProjectInfo = styled.div`
-    justify-content: space-evenly;
-    background-color: var(--background);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: all 0.5s ease;
-  `;
-
-  const StyledProjectImage = styled.img`
-    height: 100%;
-  `;
-
-  const StyledCardContentContainer = styled.p`
-    text-align: center;
-    margin: 0 1rem;
-  `;
-
-  const StyledProjectLink = styled.a`
-    background-color: var(--red-accent);
-    transition: all 0.5s ease;
-
-    &:hover {
-      background-color: var(--green-accent);
-    }
-  `;
-
   return (
     <StyledProjectCard className="project-card">
       <picture>
