@@ -224,7 +224,8 @@ const Contact = () => {
       </div>
       <div class="container flex-item flex-column">
         <StyledContactByEmail className="base-text center">
-          You can also send an email anytime at{' '}
+          Currently, this form will not actually send me anything, so you can
+          also send an email anytime at{' '}
           <StyledEmail
             href="mailto:ctbarrett.tech@gmail.com"
             rel="noreferrer"
