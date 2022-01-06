@@ -124,6 +124,7 @@ const StyledBottomOfPageLink = styled(Link)`
   }
 `;
 
+// Component function
 const Home = ({ featuredProjects }) => {
   return (
     <StyledMain>

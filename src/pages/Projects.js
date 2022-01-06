@@ -39,6 +39,7 @@ const StyledBottomOfPageLink = styled.a`
   }
 `;
 
+// Component function
 const Projects = ({ allProjects }) => {
   return (
     <StyledMain>
