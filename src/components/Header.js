@@ -2,52 +2,52 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+// Styled Components
+const StyledNav = styled.nav`
+  justify-content: space-between;
+  height: 100%;
+  padding: 1em 0;
+`;
+
+const StyledLogo = styled(Link)`
+  &:hover {
+    color: var(--green-accent);
+  }
+`;
+
+const StyledNavLinksContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    background-color: var(--background);
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -1000;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 5em;
+    z-index: 2;
+  }
+`;
+
+const StyledMainNavItem = styled(NavLink)`
+  margin-left: 75px;
+
+  @media screen and (max-width: 768px) {
+    margin: 2em 0;
+  }
+`;
+
+const StyledNavList = styled.div`
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 0;
+  }
+`;
+
+// Component function
 const Header = () => {
-  // Styled Components
-
-  const StyledNav = styled.nav`
-    justify-content: space-between;
-    height: 100%;
-    padding: 1em 0;
-  `;
-
-  const StyledLogo = styled(Link)`
-    &:hover {
-      color: var(--green-accent);
-    }
-  `;
-
-  const StyledNavLinksContainer = styled.div`
-    @media screen and (max-width: 768px) {
-      background-color: var(--background);
-      display: none;
-      position: absolute;
-      top: 0;
-      right: -1000;
-      height: 100vh;
-      width: 100vw;
-      margin-top: 5em;
-      z-index: 2;
-    }
-  `;
-
-  const StyledMainNavItem = styled(NavLink)`
-    margin-left: 75px;
-
-    @media screen and (max-width: 768px) {
-      margin: 2em 0;
-    }
-  `;
-
-  const StyledNavList = styled.div`
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      justify-content: center;
-      margin-top: 1em;
-      padding: 0;
-    }
-  `;
-
   return (
     <header>
       <div className="container">
