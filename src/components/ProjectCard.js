@@ -8,14 +8,19 @@ const StyledProjectCard = styled.article`
   border: 3px solid var(--green-accent);
   height: 350px;
   width: 350px;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
+  overflow: hidden;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   &:hover .project-info {
     opacity: 0.95;
+  }
+
+  &:hover .project-image {
+    transform: scale(1.1);
   }
 `;
 
@@ -33,6 +38,7 @@ const StyledProjectInfo = styled.div`
 
 const StyledProjectImage = styled.img`
   height: 100%;
+  transition: transform 0.3s ease;
 `;
 
 const StyledCardContentContainer = styled.p`
