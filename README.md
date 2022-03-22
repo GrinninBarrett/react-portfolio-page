@@ -9,7 +9,6 @@ This is my portfolio website, created using React.
 ## Table of Contents
   * [Technologies](#technologies)
   * [Functionality](#functionality)
-  * [Challenges](#challenges)
   * [Future Development](#future-development)
   * [Contact](#contact)
   * [License](#license)
@@ -29,12 +28,6 @@ This is my portfolio website, created using React.
 #### Application Demo
 
 ![Application Demo](./public/assets/images/app-demo.gif)
-
-
-## Challenges
-
-* Refactoring my existing portfolio page to use React wasn't hard in itself. The biggest challenge with this was figuring out how to implement a new hamburger menu using Styled Components.
-* Another challenge was to fix some formatting/CSS issues with Safari. I tried opening the deployed application on my iPhone, and even with Chrome (which is really just Safari with a Chrome interface), the transition property using `all` wasn't working smoothly. After some quick research, I realized the issue was with the `html, body` selectors needing a `relative` position. 
 
 
 ## Future Development
