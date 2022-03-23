@@ -32,7 +32,8 @@ This is my portfolio website, created using React.
 
 ## Future Development
 
-* I would like to turn this into a full stack application, using MongoDB and GraphQL for the backend. The purpose of this would be to have all of my projects in a database, allowing for more streamlined updating through a CMS built into the application using authentication and authorization for me to use as an admin.
+* I would like to turn this into a full stack application, using MongoDB and GraphQL for the backend. The purpose of this would be to have all of my projects in a database, allowing for more streamlined updating of portfolio projects through a CMS.
+* I need to either make the email form actually email me, or remove it altogether in favor of something else.
 
 
 ## Contact
