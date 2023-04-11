@@ -1,15 +1,4 @@
 const allProjects = [
-  // {
-  //     id: 1,
-  //     name: "Platonic Friends Forever",
-  //     primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_579,q_auto/v1633128074/Portfolio%20Images/platonic-friends-forever_vlggd7.webp",
-  //     image: "./assets/images/platonic-friends-forever.png",
-  //     alt: "Platonic Friends Forever application",
-  //     gitHub: "https://github.com/GrinninBarrett/platonic-friends-forever",
-  //     liveURL: "https://pfforever.herokuapp.com/",
-  //     technologies: "Express.js, Sequelize/MySQL, Handlebars.js, Materialize",
-  //     description: "Social networking app to make new friends with similar interests"
-  // },
   {
     id: 1,
     name: "CoinBull",
@@ -18,7 +7,7 @@ const allProjects = [
     image: "./assets/images/coinbull.png",
     alt: "CoinBull application",
     gitHub: "https://github.com/GrinninBarrett/CoinBull",
-    liveURL: "https://coinbullapp.herokuapp.com",
+    liveURL: "https://coinbull.herokuapp.com",
     technologies: "React, MongoDB, Mongoose, GraphQL, Bulma, Heroku",
     description: "Get current crypto information and save favorites",
   },
