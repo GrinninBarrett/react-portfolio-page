@@ -3,13 +3,13 @@ const allProjects = [
     id: 1,
     name: "CoinBull",
     primarySource:
-      "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_490,q_auto/v1637466900/Portfolio%20Images/coinbullapp.herokuapp.com__1_i7lcsb.png",
+      "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1637466900/Portfolio%20Images/coinbullapp.herokuapp.com__1_i7lcsb.webp",
     image: "./assets/images/coinbull.png",
     alt: "CoinBull application",
     gitHub: "https://github.com/GrinninBarrett/CoinBull",
     liveURL: "https://coinbull.herokuapp.com",
     technologies: "React, MongoDB, Mongoose, GraphQL, Bulma, Heroku",
-    description: "Get current crypto information and save favorites",
+    description: "Get current cryptocurrency information and save favorites",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const allProjects = [
     id: 3,
     name: "Book Search Engine",
     primarySource:
-      "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_465,q_auto/v1637469236/Portfolio%20Images/glacial-stream-35332.herokuapp.com__p29zpm.png",
+      "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1637469236/Portfolio%20Images/glacial-stream-35332.herokuapp.com__p29zpm.webp",
     image: "./assets/images/book-search-engine.png",
     alt: "Book Search Engine application",
     gitHub: "https://github.com/GrinninBarrett/book-search-engine",
@@ -39,7 +39,7 @@ const allProjects = [
     id: 4,
     name: "Weather Dashboard",
     primarySource:
-      "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_527,q_auto/v1633128074/Portfolio%20Images/weather-dashboard_ywoomr.webp",
+      "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1682865563/weather-dashboard_r5myrc.webp",
     image: "./assets/images/weather-dashboard.png",
     alt: "Weather Dashboard application",
     gitHub: "https://github.com/GrinninBarrett/weather-dashboard",
@@ -63,11 +63,23 @@ const allProjects = [
 
   {
     id: 6,
+    name: "Level Up Music Quiz",
+    primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1678837249/Images/grinninbarrett.github.io_levelup-quiz__r4ueqa.webp",
+    image: "./assets/images/level-up-quiz.png",
+    alt: "Level Up Quiz application",
+    gitHub: "https://github.com/GrinninBarrett/levelup-quiz",
+    liveURL: "https://grinninbarrett.github.io/levelup-quiz/",
+    technologies: "Svelte, Open Trivia DB API",
+    description: "Music trivia quiz application to test your music knowledge"
+  },
+
+  {
+    id: 7,
     name: "Wasted Class Time",
     primarySource:
       "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_486,q_auto/v1631213149/Portfolio%20Images/wasted-class-time_rqwdbt.webp",
     image:
-      "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,q_auto:low,w_1000/v1631213149/Images/wasted-class-time_rqwdbt.png",
+      "./assets/images/wasted-class-time.png",
     alt: "Wasted Class Time application",
     gitHub: "https://github.com/GrinninBarrett/wasted-class-time",
     liveURL: "https://grinninbarrett.github.io/wasted-class-time/",
@@ -77,7 +89,7 @@ const allProjects = [
   },
 
   {
-    id: 7,
+    id: 8,
     name: "Work Day Scheduler",
     primarySource:
       "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_527,q_auto/v1633128074/Portfolio%20Images/work-day-scheduler_h7jeof.webp",
@@ -90,7 +102,7 @@ const allProjects = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "Code Quiz",
     primarySource:
       "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_486,q_auto/v1633128074/Portfolio%20Images/code-quiz_hmveas.webp",
@@ -103,7 +115,7 @@ const allProjects = [
   },
 
   {
-    id: 9,
+    id: 10,
     name: "Password Generator",
     primarySource:
       "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_489,q_auto/v1633128074/Portfolio%20Images/password-generator_bcoihz.webp",
@@ -116,7 +128,7 @@ const allProjects = [
   },
 
   {
-    id: 10,
+    id: 11,
     name: "Rock-Paper-Scissors",
     primarySource:
       "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_488,q_auto/v1633128074/Portfolio%20Images/rock-paper-scissors_tyzl9f.webp",
@@ -125,11 +137,11 @@ const allProjects = [
     gitHub: "https://github.com/GrinninBarrett/rock-paper-scissors-new",
     liveURL: "https://grinninbarrett.github.io/rock-paper-scissors-new/",
     technologies: "JavaScript, HTML, CSS",
-    description: "Play Rock-Paper-Scissors against the computer!",
+    description: "Play Rock-Paper-Scissors against a virtual opponent",
   },
 
   {
-    id: 11,
+    id: 12,
     name: "Technical Documentation Page",
     primarySource:
       "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_523,q_auto/v1633128074/Portfolio%20Images/technical-documentation-page_quwm4j.webp",
@@ -142,9 +154,9 @@ const allProjects = [
   },
 
   {
-    id: 12,
+    id: 13,
     name: "Google Homepage Recreation",
-    primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_459,q_auto/v1637720748/Portfolio%20Images/127.0.0.1_5500_index.html_1_gr6z4i.png",
+    primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1637720748/Portfolio%20Images/127.0.0.1_5500_index.html_1_gr6z4i.webp",
     image: "./assets/images/google-homepage.png",
     alt: "Google Homepage Recreation",
     gitHub: "https://github.com/GrinninBarrett/google-homepage",
@@ -170,7 +182,7 @@ const featuredProjects = [
     id: 1,
     name: "CoinBull",
     primarySource:
-      "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_490,q_auto/v1637466900/Portfolio%20Images/coinbullapp.herokuapp.com__1_i7lcsb.png",
+      "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1637466900/Portfolio%20Images/coinbullapp.herokuapp.com__1_i7lcsb.webp",
     image: "./assets/images/coinbull.png",
     alt: "CoinBull application",
     gitHub: "https://github.com/GrinninBarrett/CoinBull",
@@ -195,7 +207,7 @@ const featuredProjects = [
     id: 3,
     name: "Book Search Engine",
     primarySource:
-      "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_465,q_auto/v1637469236/Portfolio%20Images/glacial-stream-35332.herokuapp.com__p29zpm.png",
+      "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1637469236/Portfolio%20Images/glacial-stream-35332.herokuapp.com__p29zpm.webp",
     image: "./assets/images/book-search-engine.png",
     alt: "Book Search Engine application",
     gitHub: "https://github.com/GrinninBarrett/book-search-engine",

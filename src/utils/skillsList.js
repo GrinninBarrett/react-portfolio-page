@@ -10,6 +10,11 @@ const skills = [
         url: "https://reactjs.org/"
     },
     {
+        name: "Svelte",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1682864645/svelte-svgrepo-com_libip6.svg",
+        url: "https://svelte.dev/"
+    },
+    {
         name: "MongoDB",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/v1637103399/Portfolio%20Images/Skills%20Icons/mongodb_sekoab.svg",
         url: "https://www.mongodb.com/"
