@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -18,6 +18,17 @@ import ScrollToTop from './utils/ScrollToTop';
 function App() {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    console.log(`
+                   ,------------------------,    
+                  |                          |
+     /\\_/\\        | I'm really good at this! |
+    ( o.o )    /  |                          |
+     > ^ <    /   |     Please hire me!      |
+    /  ~  \\  /    |                          |
+                   '------------------------'
+    `)
+  }, [])
   return (
     <Router>
       <Header />

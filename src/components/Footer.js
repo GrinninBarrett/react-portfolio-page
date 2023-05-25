@@ -197,14 +197,14 @@ const Footer = () => {
         </StyledFooterNav>
         <StyledCopyright id="copyright">
           <p>
-            <StyledFooterLink
+            <StyledSocialLink
               className="light-text quicksand footer-link"
               href="https://github.com/GrinninBarrett"
               target="_blank"
               rel="noreferrer"
             >
               &copy; 2021 Tucker Barrett
-            </StyledFooterLink>
+            </StyledSocialLink>
           </p>
         </StyledCopyright>
       </div>
