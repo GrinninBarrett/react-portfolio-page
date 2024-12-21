@@ -11,7 +11,7 @@ const skills = [
     },
     {
         name: "C#",
-        image: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1734805515/Portfolio%20Images/Skills%20Icons/c-sharp-c_ls7tfo.svg",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_limit,h_256,w_256/v1734805515/Portfolio%20Images/Skills%20Icons/c-sharp-c_ls7tfo.svg",
         url: "https://learn.microsoft.com/en-us/dotnet/csharp/"
     },
     {
@@ -21,7 +21,7 @@ const skills = [
     },
     {
         name: "Salesforce",
-        image: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1734805640/Portfolio%20Images/Skills%20Icons/salesforce_tkchwx.svg",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_limit,h_256,w_256/v1734806620/Portfolio%20Images/Skills%20Icons/salesforce_1_d180i9.svg",
         url: "https://developer.salesforce.com/docs"
     },
     {
