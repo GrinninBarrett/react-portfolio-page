@@ -10,6 +10,21 @@ const skills = [
         url: "https://reactjs.org/"
     },
     {
+        name: "C#",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1734805515/Portfolio%20Images/Skills%20Icons/c-sharp-c_ls7tfo.svg",
+        url: "https://learn.microsoft.com/en-us/dotnet/csharp/"
+    },
+    {
+        name: ".NET",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1734805585/Portfolio%20Images/Skills%20Icons/dotnet_swmwbi.svg",
+        url: "https://dotnet.microsoft.com/en-us/"
+    },
+    {
+        name: "Salesforce",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1734805640/Portfolio%20Images/Skills%20Icons/salesforce_tkchwx.svg",
+        url: "https://developer.salesforce.com/docs"
+    },
+    {
         name: "Svelte",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1682864645/svelte-svgrepo-com_libip6.svg",
         url: "https://svelte.dev/"

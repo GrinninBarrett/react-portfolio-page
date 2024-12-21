@@ -31,7 +31,7 @@ const allProjects = [
     image: "./assets/images/book-search-engine.png",
     alt: "Book Search Engine application",
     gitHub: "https://github.com/GrinninBarrett/book-search-engine",
-    liveURL: "https://glacial-stream-35332.herokuapp.com/",
+    liveURL: "https://ctb-book-search.herokuapp.com/",
     technologies: "GraphQL, MongoDB, Mongoose, Express, React, Heroku",
     description: "Get current crypto information and save favorites",
   },
